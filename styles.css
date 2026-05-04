@@ -10,7 +10,7 @@
   --bg-hover:     #171F2A;
   --text:         #E8EDF2;
   --text-2:       #A3ADB8;
-  --muted:        #6B7585;
+  --muted:        #7E8A98;
   --accent:       #01E49C;
   --accent-dim:   rgba(1,228,156,0.10);
   --border:       rgba(255,255,255,0.06);
@@ -51,8 +51,11 @@ button{font-family:inherit}
 
 .nav-wrap{display:flex;justify-content:space-between;align-items:center;height:80px}
 .logo{display:flex;align-items:center;gap:var(--s8)}
-.logo-img{display:block;width:28px;height:28px;flex-shrink:0}
+.logo-img{display:block;width:28px;height:28px;flex-shrink:0;border-radius:var(--r6)}
 .logo-text{font-size:14px;font-weight:600;letter-spacing:-0.01em;color:var(--text)}
+
+/* Light mode: logo needs dark bg since the J arrow is white */
+[data-theme="light"] .logo-img{background:#111;border-radius:var(--r6);padding:2px}
 
 nav{display:flex;align-items:center;gap:var(--s24)}
 nav a{color:var(--muted);font-size:14px;font-weight:440;padding:var(--s4) 0;border-radius:0;transition:color var(--tb) var(--ease);position:relative}
@@ -78,8 +81,8 @@ nav a:hover{color:var(--text);background:none}
 .btn-primary:active{transform:scale(0.975)}
 .btn-primary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
-.btn-outline{display:inline-flex;align-items:center;gap:var(--s8);background:transparent;border:1px solid var(--border);color:var(--text-2);padding:var(--s12) var(--s24);border-radius:var(--r8);font-size:14px;font-weight:440;cursor:pointer;transition:color var(--tb) var(--ease),border-color var(--tb) var(--ease),background var(--tb) var(--ease),transform var(--tf) var(--ease)}
-.btn-outline:hover{color:var(--text);border-color:var(--border-hover);background:rgba(255,255,255,0.025)}
+.btn-outline{display:inline-flex;align-items:center;gap:var(--s8);background:var(--bg);border:1.5px solid var(--text);color:var(--text);padding:var(--s12) var(--s24);border-radius:var(--r-pill);font-size:14px;font-weight:500;cursor:pointer;transition:color var(--tb) var(--ease),border-color var(--tb) var(--ease),background var(--tb) var(--ease),transform var(--tf) var(--ease)}
+.btn-outline:hover{color:var(--bg);border-color:var(--text);background:var(--text)}
 .btn-outline:active{transform:scale(0.975)}
 .btn-outline:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
@@ -115,7 +118,7 @@ nav a:hover{color:var(--text);background:none}
 }
 
 .hero-headline{
-  font-size:clamp(38px,5.2vw,62px);
+  font-size:clamp(44px,6vw,76px);
   line-height:1.06;
   font-weight:500;
   letter-spacing:-0.035em;
@@ -534,9 +537,13 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 /* ============================================
    THEME TOGGLE
    ============================================ */
-.nav-actions{display:flex;align-items:center;gap:var(--s12)}
+.nav-actions{display:flex;align-items:center;gap:var(--s8)}
 
-.theme-toggle{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:var(--r8);border:1px solid var(--border);background:transparent;color:var(--text-2);cursor:pointer;transition:color var(--tb) var(--ease),border-color var(--tb) var(--ease),background var(--tb) var(--ease)}
+.lang-toggle{display:flex;align-items:center;justify-content:center;height:32px;padding:0 var(--s12);border-radius:var(--r6);border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:inherit;font-size:11px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;transition:color var(--tb) var(--ease),border-color var(--tb) var(--ease),background var(--tb) var(--ease);text-decoration:none}
+.lang-toggle:hover{color:var(--text);border-color:var(--border-hover);background:rgba(0,0,0,0.03)}
+[data-theme="dark"] .lang-toggle:hover{background:rgba(255,255,255,0.04)}
+
+.theme-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:var(--r6);border:1px solid var(--border);background:transparent;color:var(--text-2);cursor:pointer;transition:color var(--tb) var(--ease),border-color var(--tb) var(--ease),background var(--tb) var(--ease)}
 .theme-toggle:hover{color:var(--text);border-color:var(--border-hover);background:rgba(255,255,255,0.025)}
 .theme-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
@@ -555,8 +562,8 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
   --text:         #111318;
   --text-2:       #4B5563;
   --muted:        #6B7280;
-  --accent:       #059669;
-  --accent-dim:   rgba(5,150,105,0.10);
+  --accent:       #047857;
+  --accent-dim:   rgba(4,120,87,0.10);
   --border:       rgba(0,0,0,0.08);
   --border-hover: rgba(0,0,0,0.15);
 }
@@ -601,7 +608,7 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 [data-theme="light"] .theme-toggle:hover{background:rgba(0,0,0,0.04)}
 
 /* Light mode — project icons keep their colors */
-[data-theme="light"] .icon-green{background:rgba(5,150,105,0.10);color:#059669}
+[data-theme="light"] .icon-green{background:rgba(4,120,87,0.10);color:#047857}
 
 /* Light mode — case highlight */
 [data-theme="light"] .case-highlight{background:var(--bg-raised)}
@@ -1603,4 +1610,92 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
   }
   .case-hero-overlay h2{font-size:16px}
   .case-hero-overlay p{font-size:12px;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+}
+
+/* ============================================
+   HOME REFINEMENTS — Conversion focus
+   ============================================ */
+
+/* Hero eyebrow */
+.hero-eyebrow{
+  font-size:11px;
+  font-weight:520;
+  letter-spacing:0.1em;
+  color:var(--accent);
+  margin-bottom:var(--s24);
+  text-transform:uppercase;
+}
+
+/* Before vs After section */
+.home-bva{
+  padding-top:var(--s120);
+  padding-bottom:var(--s64);
+}
+
+.home-bva > .section-id{
+  margin-bottom:var(--s48);
+}
+
+.home-bva-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:var(--s32);
+}
+
+.home-bva-col{
+  display:flex;
+  flex-direction:column;
+  gap:var(--s20);
+}
+
+.home-bva-label{
+  font-size:12px;
+  font-weight:620;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding-bottom:var(--s16);
+  border-bottom:2px solid var(--border);
+}
+
+.home-bva-before{color:var(--muted)}
+.home-bva-after{color:var(--accent);border-bottom-color:var(--accent)}
+
+.home-bva-list{
+  display:flex;
+  flex-direction:column;
+  gap:var(--s16);
+  list-style:none;
+}
+
+.home-bva-list li{
+  font-size:15px;
+  color:var(--text-2);
+  line-height:1.5;
+  padding-left:var(--s24);
+  position:relative;
+}
+
+.home-bva-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:9px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--border-hover);
+}
+
+.home-bva-after + .home-bva-list li::before{
+  background:var(--accent);
+}
+
+/* ---- BVA responsive ---- */
+@media(max-width:1024px){
+  .home-bva-grid{grid-template-columns:1fr;gap:var(--s48)}
+}
+
+@media(max-width:768px){
+  .home-bva{padding-top:var(--s80)}
+  .home-bva-list li{font-size:14px}
 }
