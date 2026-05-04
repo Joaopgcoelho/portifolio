@@ -1573,11 +1573,11 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 }
 
 .case-hero-lxd{
-  background:linear-gradient(135deg, #0F172A 0%, #1E293B 40%, #3B82F6 100%);
+  background:url('lxd-creator-mock.png') center/cover no-repeat;
 }
 
 .case-hero-lab{
-  background:linear-gradient(135deg, #0F172A 0%, #1E293B 40%, #059669 100%);
+  background:url('lab-virtual-mock.png') center/cover no-repeat;
 }
 
 /* Metrics section below image */
@@ -1698,4 +1698,21 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 @media(max-width:768px){
   .home-bva{padding-top:var(--s80)}
   .home-bva-list li{font-size:14px}
+}
+
+/* ============================================
+   REAL PROJECT IMAGES
+   ============================================ */
+.case-img-real{
+  border-radius:var(--r12);
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+.case-img-real img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.case-img-real.wide{
+  grid-column:1/-1;
 }
