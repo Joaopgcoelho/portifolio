@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 120 120" fill="none">
+  <!-- J - left arrow pointing down-left (dark teal) -->
+  <path d="M60 4L8 56L32 80L60 52V116L32 80" fill="#546B6B" />
+  <!-- P - right arrow pointing up-right (gold) -->
+  <path d="M60 4L112 56L88 80L60 52" fill="#E8B400" />
+  <!-- P shadow -->
+  <path d="M112 56L88 80L112 80Z" fill="#CCA000" />
+  <!-- J bottom -->
+  <path d="M8 56L32 80L8 80Z" fill="#455A5A" />
+</svg>

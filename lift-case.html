@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case — Lift 2.0 Design System | JP Gonçalves</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page lift-case">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Voltar aos projetos</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder case-hero-lift">
+        <div class="case-hero-overlay">
+          <h2>Lift 2.0 — Escalando Design Systems para múltiplas marcas</h2>
+          <p>Como estruturamos um sistema capaz de suportar diferentes identidades sem perder consistência e velocidade.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value">↓ 70%</span>
+          <span class="metric-label">Inconsistência entre produtos</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">3x</span>
+          <span class="metric-label">Velocidade de entrega de UI</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">90%</span>
+          <span class="metric-label">Adoção do DS entre times</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">90%</span>
+          <span class="metric-label">CSAT na SAVA (primeiro produto)</span>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Design System</span>
+        <span>System Ops</span>
+        <span>Governance</span>
+        <span>Multi-brand</span>
+        <span>Figma</span>
+      </div>
+    </section>
+
+    <!-- ====================== BODY ====================== -->
+    <article class="case-body container">
+
+      <!-- CONTEXTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Contexto</div>
+        <h2>Um grupo educacional em expansão digital acelerada</h2>
+        <div class="lift-prose">
+          <p>A YDUQS é um dos maiores grupos educacionais do Brasil. Sob seu guarda-chuva operam marcas com identidades e públicos distintos — IBMEC, Estácio, entre outras — cada uma com suas plataformas digitais, portais do aluno e ferramentas internas.</p>
+          <p>Com a aceleração digital pós-pandemia, o número de produtos cresceu rapidamente. Mas a infraestrutura de design não acompanhou: cada time criava seus próprios componentes, definia suas próprias cores, e tomava decisões visuais de forma isolada. O resultado era previsível — inconsistência, retrabalho e lentidão.</p>
+        </div>
+      </section>
+
+      <!-- DESAFIO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Desafio</div>
+        <h2>O problema não era visual — era organizacional</h2>
+        <div class="lift-prose">
+          <p>O Lift 1.0 existia como um conjunto de UI Kits no Figma, mas não funcionava como um sistema de verdade. Não havia tokens compartilhados, não havia governança, e não havia alinhamento entre o que o design definia e o que o front-end implementava.</p>
+          <p>O desafio real ia além de componentes bonitos:</p>
+        </div>
+        <div class="lift-challenge-grid">
+          <div class="lift-challenge-card">
+            <h4>Múltiplas marcas, uma estrutura</h4>
+            <p>IBMEC e Estácio têm identidades visuais completamente diferentes, mas precisam compartilhar a mesma base de componentes para viabilizar escala.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Desalinhamento entre times</h4>
+            <p>Designers tomavam decisões visuais sem referência comum. Desenvolvedores implementavam variações que divergiam do Figma. Ninguém sabia qual era a "versão correta".</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Limitações técnicas</h4>
+            <p>Os componentes existentes eram acoplados a contextos específicos — impossível reutilizar um botão do IBMEC na Estácio sem reescrever código.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Padronizar sem engessar</h4>
+            <p>O sistema precisava garantir consistência sem tirar a autonomia dos times. Regras demais matam velocidade; regras de menos geram caos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEMA COM IMPACTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Problema</div>
+        <h2>Cada falha tinha uma consequência real</h2>
+        <ul class="case-list lift-problem-list">
+          <li><strong>Tokens pouco estruturados</strong> geravam retrabalho constante — cada novo projeto reinventava cores e espaçamentos do zero.</li>
+          <li><strong>Baixa padronização entre marcas</strong> fazia com que a mesma feature tivesse aparências diferentes em produtos do mesmo grupo.</li>
+          <li><strong>Componentes acoplados</strong> impediam reutilização — um formulário criado para o IBMEC não servia para a Estácio.</li>
+          <li><strong>Ausência de governança</strong> significava que ninguém sabia quem mantinha o quê, gerando duplicação e decisões conflitantes.</li>
+          <li><strong>Gap entre design e código</strong> criava um ciclo de revisões infinitas — o Figma dizia uma coisa, o front-end entregava outra.</li>
+        </ul>
+      </section>
+
+      <!-- DECISÕES CHAVE -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Decisões chave</div>
+        <h2>Três apostas que definiram o projeto</h2>
+        <div class="lift-decisions">
+          <div class="lift-decision">
+            <div class="lift-decision-num">01</div>
+            <div>
+              <h4>Separar tokens de brand e usage</h4>
+              <p><strong>O que:</strong> Criar camadas distintas para identidade visual (brand) e aplicação (semantic/usage).</p>
+              <p><strong>Por quê:</strong> Permitir que o mesmo componente sirva múltiplas marcas sem duplicação. A troca de tema se torna uma troca de variáveis, não de componentes.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">02</div>
+            <div>
+              <h4>Criar camadas de abstração</h4>
+              <p><strong>O que:</strong> Arquitetura em 4 níveis — Core → Brand → Semantic → Component.</p>
+              <p><strong>Por quê:</strong> Desacoplar identidade de aplicação. Cada camada tem uma responsabilidade clara, reduzindo a complexidade de manutenção.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">03</div>
+            <div>
+              <h4>Priorizar governança antes de expansão</h4>
+              <p><strong>O que:</strong> Estabelecer processos de contribuição, revisão e versionamento antes de escalar o número de componentes.</p>
+              <p><strong>Por quê:</strong> Um sistema sem governança escala problemas, não soluções. Precisávamos de regras claras antes de crescer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRADE-OFFS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Trade-offs</div>
+        <h2>O que aceitamos para chegar lá</h2>
+        <div class="lift-prose">
+          <p>Nenhuma decisão de design system é gratuita. Cada escolha envolve um custo — e reconhecer isso é parte da maturidade do processo.</p>
+        </div>
+        <div class="lift-tradeoffs">
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Aumentamos a complexidade inicial da arquitetura de tokens</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para ganhar escalabilidade real a longo prazo</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Priorizamos consistência mesmo com impacto inicial na velocidade</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para eliminar retrabalho recorrente entre times</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Investimos tempo em governança antes de criar novos componentes</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para garantir que o crescimento fosse sustentável</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARQUITETURA -->
+      <section class="case-section lift-section-wide reveal">
+        <div class="case-section-label">Arquitetura</div>
+        <h2>Quatro camadas, uma responsabilidade cada</h2>
+        <p class="lift-arch-intro">A separação em camadas é o que permite trocar a identidade visual de uma marca inteira sem quebrar um único componente.</p>
+
+        <div class="lift-arch-visual">
+          <div class="lift-arch-block lift-arch-core">
+            <span class="lift-arch-tag">01 — Core</span>
+            <h4>Primitivos</h4>
+            <p>Valores absolutos: paleta de cores, escala tipográfica, grid de espaçamento. Base imutável do sistema.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block lift-arch-brand">
+            <span class="lift-arch-tag">02 — Brand</span>
+            <h4>Identidade</h4>
+            <p>Mapeamento de primitivos para cada marca. IBMEC usa um set, Estácio usa outro — mesma estrutura, valores diferentes.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block lift-arch-semantic">
+            <span class="lift-arch-tag">03 — Semantic</span>
+            <h4>Intenção</h4>
+            <p>Tokens de uso contextual: background-surface, text-primary, border-subtle. Mapeiam intenção, não valor.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block lift-arch-component">
+            <span class="lift-arch-tag">04 — Component</span>
+            <h4>Interface</h4>
+            <p>Componentes reutilizáveis que consomem tokens semânticos. Agnósticos de marca — um botão serve todos os produtos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXECUÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Execução</div>
+        <h2>O que foi construído</h2>
+        <div class="lift-exec-grid">
+          <div class="lift-exec-card">
+            <h4>Token Structure</h4>
+            <p>Hierarquia de tokens em 4 camadas com variáveis no Figma sincronizadas com CSS custom properties. Cada marca tem seu próprio set de brand tokens.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Component System</h4>
+            <p>Biblioteca de componentes com estados completos, variantes documentadas e API consistente. Construídos para consumir tokens semânticos, não valores fixos.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Multi-brand Engine</h4>
+            <p>Suporte nativo a múltiplas marcas via brand tokens. Trocar o tema de IBMEC para Estácio é trocar um arquivo de variáveis — zero alteração em componentes.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Living Documentation</h4>
+            <p>Documentação viva com guidelines de uso, padrões de contribuição, changelog versionado e exemplos interativos para designers e desenvolvedores.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO PRODUTO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Impacto</div>
+        <h2>Resultados no produto</h2>
+        <div class="lift-impact-grid">
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">3x</span>
+            <span class="lift-impact-label">Mais rápido para criar novas interfaces</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">-70%</span>
+            <span class="lift-impact-label">Retrabalho em componentes entre marcas</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">90%</span>
+            <span class="lift-impact-label">Consistência visual cross-product</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO ORGANIZACIONAL -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Impacto no time</div>
+        <h2>O que mudou na forma de trabalhar</h2>
+        <div class="lift-org-grid">
+          <div class="lift-org-item">
+            <h4>Designers mais autônomos</h4>
+            <p>Com tokens e componentes bem definidos, designers passaram a tomar decisões com confiança — sem precisar validar cada escolha visual com liderança.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Menos decisões manuais</h4>
+            <p>O sistema absorveu decisões repetitivas (cores, espaçamentos, estados). O time passou a focar em problemas de produto, não em detalhes de UI.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Previsibilidade na entrega</h4>
+            <p>Com componentes prontos e documentados, a estimativa de esforço ficou mais precisa. Menos surpresas no handoff design → desenvolvimento.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Alinhamento design ↔ código</h4>
+            <p>Variáveis do Figma mapeadas 1:1 com CSS custom properties. O que o designer vê é o que o desenvolvedor implementa — sem tradução manual.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANTES VS DEPOIS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Antes vs Depois</div>
+        <h2>A transformação</h2>
+        <div class="lift-compare">
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-before">Antes — Lift 1.0</div>
+            <ul class="lift-compare-list">
+              <li>UI Kits isolados por marca</li>
+              <li>Tokens não documentados</li>
+              <li>Componentes duplicados e acoplados</li>
+              <li>Governança informal</li>
+              <li>Gap constante entre design e código</li>
+              <li>Cada projeto reinventava padrões</li>
+            </ul>
+          </div>
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-after">Depois — Lift 2.0</div>
+            <ul class="lift-compare-list">
+              <li>Sistema unificado multi-marca</li>
+              <li>Tokens em 4 camadas documentadas</li>
+              <li>Componentes agnósticos e reutilizáveis</li>
+              <li>Governança com processos claros</li>
+              <li>Variáveis Figma ↔ CSS sincronizadas</li>
+              <li>Novos produtos herdam o sistema</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- APRENDIZADOS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Aprendizados</div>
+        <h2>O que esse projeto me ensinou</h2>
+        <ul class="case-list">
+          <li><strong>Design System é um problema organizacional, não apenas visual.</strong> A parte mais difícil não é criar componentes — é mudar como times trabalham juntos.</li>
+          <li><strong>Governança é o que separa um kit de UI de um sistema de verdade.</strong> Sem processos claros de contribuição e revisão, o sistema se degrada com o tempo.</li>
+          <li><strong>Separação de camadas reduz complexidade a longo prazo.</strong> O investimento inicial em arquitetura se paga exponencialmente quando novas marcas entram no ecossistema.</li>
+          <li><strong>Documentação acessível acelera adoção mais do que treinamentos formais.</strong> Times adotam o que conseguem entender sozinhos.</li>
+          <li><strong>Design System é um produto — precisa de roadmap, métricas e iteração contínua.</strong> Não é um projeto com data de fim.</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="lift-cta container reveal">
+      <h2>Vamos construir sistemas que escalam?</h2>
+      <p>Se você precisa de um Design System que funcione de verdade em múltiplos produtos e marcas, vamos conversar.</p>
+      <a href="index.html#contact" class="btn-hero-primary">Entrar em contato <span>→</span></a>
+    </section>
+
+    <!-- ====================== NEXT ====================== -->
+    <section class="case-next container reveal">
+      <p class="case-next-label">Próximo projeto</p>
+      <a href="lxd-creator.html" class="case-next-link">LXD Creator — Ferramenta de criação visual <span>→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

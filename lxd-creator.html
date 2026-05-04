@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case — LXD Creator | JP Gonçalves</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page lxd-case">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Voltar aos projetos</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder case-hero-lxd">
+        <div class="case-hero-overlay">
+          <h2>LXD Creator — Redesenhando a produção de conteúdo educacional</h2>
+          <p>Como centralizamos ferramentas, reduzimos fricção e aumentamos a produtividade na criação acadêmica — transformando um CMS técnico em uma ferramenta de criação visual.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value">↓ 60%</span>
+          <span class="metric-label">Uso de ferramentas paralelas</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">↑ 2.5x</span>
+          <span class="metric-label">Produtividade na criação</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">↑ 80%</span>
+          <span class="metric-label">Consistência de conteúdo</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">1 fluxo</span>
+          <span class="metric-label">Substituiu 3 ferramentas</span>
+        </div>
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Product Design</span>
+        <span>UX Research</span>
+        <span>CMS</span>
+        <span>EdTech</span>
+        <span>Responsive</span>
+      </div>
+    </section>
+
+    <!-- ====================== BODY ====================== -->
+    <article class="case-body container">
+
+      <!-- CONTEXTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Contexto</div>
+        <h2>Produção de conteúdo acadêmico em escala</h2>
+        <div class="lift-prose">
+          <p>Na YDUQS, a produção de conteúdo educacional digital é uma operação contínua e de alta complexidade. Dezenas de Learning Experience Designers (LXDs) criam materiais para milhares de alunos em múltiplas marcas e modalidades.</p>
+          <p>O CMS utilizado era o Strapi — poderoso como backend, mas com uma interface de edição pensada para desenvolvedores, não para criadores de conteúdo. Os LXDs dependiam de múltiplas ferramentas externas (Figma, planilhas, documentos) para montar, visualizar e validar o conteúdo antes de publicar.</p>
+          <p>O resultado: um fluxo fragmentado, lento e propenso a erros — incompatível com a escala e a velocidade que o negócio exigia.</p>
+        </div>
+      </section>
+
+      <!-- DESAFIO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Desafio</div>
+        <h2>Criar conteúdo não deveria exigir 3 ferramentas</h2>
+        <div class="lift-prose">
+          <p>O problema não era falta de ferramentas — era excesso delas. Cada etapa do processo vivia em um lugar diferente, e a informação se perdia entre transições.</p>
+        </div>
+        <div class="lift-challenge-grid">
+          <div class="lift-challenge-card">
+            <h4>Ferramentas desconectadas</h4>
+            <p>LXDs alternavam entre Strapi, Figma e planilhas para uma única tarefa. Cada troca de contexto consumia tempo e gerava risco de inconsistência.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Alto esforço cognitivo</h4>
+            <p>A interface do Strapi exigia conhecimento técnico para tarefas simples. Configurar um componente visual demandava navegar por campos JSON e dropdowns aninhados.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Precisão acadêmica</h4>
+            <p>Conteúdo educacional exige rigor. Erros de formatação, ordem ou hierarquia impactam diretamente a experiência de aprendizado do aluno.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Prazos e stakeholders</h4>
+            <p>Múltiplos times dependiam do conteúdo: coordenação, revisão, publicação. Atrasos em uma etapa cascateavam para todas as outras.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEMA COM IMPACTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Problema</div>
+        <h2>Cada falha no fluxo tinha um custo real</h2>
+        <ul class="case-list lift-problem-list">
+          <li><strong>Ferramentas desconectadas</strong> aumentavam o tempo de produção em até 40% — cada conteúdo passava por 3 ambientes diferentes antes de ser publicado.</li>
+          <li><strong>Interface técnica do CMS</strong> gerava dependência de suporte — LXDs precisavam de ajuda para tarefas que deveriam ser autônomas.</li>
+          <li><strong>Ausência de preview</strong> significava que erros só eram descobertos após publicação, gerando retrabalho e correções emergenciais.</li>
+          <li><strong>Fluxo fragmentado</strong> tornava impossível estimar prazos com precisão — ninguém sabia quanto tempo cada etapa realmente levava.</li>
+          <li><strong>Inconsistência visual</strong> entre conteúdos de diferentes LXDs prejudicava a experiência do aluno e a percepção de qualidade da marca.</li>
+        </ul>
+      </section>
+
+      <!-- DECISÕES CHAVE -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Decisões chave</div>
+        <h2>Quatro apostas que definiram o produto</h2>
+        <div class="lift-decisions">
+          <div class="lift-decision">
+            <div class="lift-decision-num">01</div>
+            <div>
+              <h4>Centralizar a criação dentro do CMS</h4>
+              <p><strong>Decisão:</strong> Eliminar a necessidade de ferramentas externas para montar e visualizar conteúdo.</p>
+              <p><strong>Motivo:</strong> Cada troca de ferramenta é uma oportunidade de erro e perda de tempo. Um fluxo integrado reduz fricção e aumenta velocidade.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">02</div>
+            <div>
+              <h4>Interface visual ao invés de configuração técnica</h4>
+              <p><strong>Decisão:</strong> Substituir campos JSON e dropdowns por manipulação direta de componentes visuais.</p>
+              <p><strong>Motivo:</strong> LXDs são criadores de conteúdo, não desenvolvedores. A interface precisa falar a linguagem deles.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">03</div>
+            <div>
+              <h4>Manipulação direta de componentes</h4>
+              <p><strong>Decisão:</strong> Drag-and-drop, edição inline e reordenação visual como interações primárias.</p>
+              <p><strong>Motivo:</strong> Reduzir a distância entre intenção e ação. O que o LXD vê é o que o aluno recebe.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">04</div>
+            <div>
+              <h4>Preview antes da publicação</h4>
+              <p><strong>Decisão:</strong> Implementar preview em tempo real que simula a experiência final do aluno.</p>
+              <p><strong>Motivo:</strong> Eliminar o ciclo "publica → descobre erro → corrige → republica" que consumia horas semanais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRADE-OFFS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Trade-offs</div>
+        <h2>O que aceitamos para simplificar</h2>
+        <div class="lift-prose">
+          <p>Simplificar um fluxo complexo exige escolhas difíceis. Cada decisão de "remover" algo é também uma decisão de "priorizar" outra coisa.</p>
+        </div>
+        <div class="lift-tradeoffs">
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Reduzimos flexibilidade avançada de edição</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para ganhar simplicidade e velocidade no dia a dia</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Aumentamos a complexidade técnica do front-end</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para simplificar radicalmente a experiência do usuário</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Priorizamos consistência sobre customização livre</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para garantir qualidade uniforme em escala</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISCOVERY -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Discovery</div>
+        <h2>Entendendo o problema antes de desenhar</h2>
+        <div class="lxd-discovery-grid">
+          <div class="lxd-discovery-block">
+            <span class="lxd-discovery-tag">A — Imersão</span>
+            <h4>Análise de fluxos existentes</h4>
+            <p>Mapeamos o fluxo completo de criação de conteúdo: desde o briefing até a publicação. Identificamos 7 pontos de fricção e 3 handoffs desnecessários entre ferramentas.</p>
+            <p>Interação direta com LXDs para entender dores reais, workarounds e necessidades não atendidas.</p>
+          </div>
+          <div class="lxd-discovery-block">
+            <span class="lxd-discovery-tag">B — Benchmark</span>
+            <h4>Critérios analisados</h4>
+            <ul class="lxd-benchmark-list">
+              <li>Drag-and-drop nativo</li>
+              <li>Preview em tempo real</li>
+              <li>Edição inline</li>
+              <li>Autosave</li>
+              <li>Undo/redo</li>
+              <li>Busca de componentes</li>
+            </ul>
+          </div>
+          <div class="lxd-discovery-block">
+            <span class="lxd-discovery-tag">C — Co-criação</span>
+            <h4>Workshop com usuários</h4>
+            <p>Sessões de co-criação com LXDs revelaram as necessidades prioritárias:</p>
+            <ul class="lxd-benchmark-list">
+              <li>Categorização clara de componentes</li>
+              <li>Visualização de variantes antes de aplicar</li>
+              <li>Preview fiel antes de publicar</li>
+              <li>Troca de componentes sem perda de conteúdo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEFINIÇÃO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Definição</div>
+        <h2>Pilares do produto</h2>
+        <div class="lift-prose">
+          <p>Com base no discovery, definimos três pilares que guiaram todas as decisões de design e priorização:</p>
+        </div>
+        <div class="lxd-pillars">
+          <div class="lxd-pillar">
+            <h4>Produtividade</h4>
+            <p>Reduzir o tempo entre "ter a ideia" e "publicar o conteúdo". Menos cliques, menos trocas de contexto, menos espera.</p>
+          </div>
+          <div class="lxd-pillar">
+            <h4>Experiência</h4>
+            <p>Tornar a criação de conteúdo prazerosa, não burocrática. Interface visual, feedback imediato, controle direto.</p>
+          </div>
+          <div class="lxd-pillar">
+            <h4>Consistência</h4>
+            <p>Garantir que todo conteúdo publicado siga os mesmos padrões visuais e estruturais, independente de quem criou.</p>
+          </div>
+        </div>
+
+        <div class="lift-highlight">
+          <p>"Priorizamos usando RICE (Reach, Impact, Confidence, Effort) para garantir que cada feature entregasse valor real antes de avançar para a próxima."</p>
+        </div>
+      </section>
+
+      <!-- ARQUITETURA DE EXPERIÊNCIA -->
+      <section class="case-section lift-section-wide reveal">
+        <div class="case-section-label">Arquitetura de experiência</div>
+        <h2>Wireflow — Wireframe + User Flow</h2>
+        <p class="lift-arch-intro">Antes de desenhar telas, mapeamos a jornada completa em um wireflow que combina wireframes de baixa fidelidade com o fluxo de navegação. Isso permitiu identificar fricções antes de investir em UI.</p>
+
+        <div class="lift-arch-visual">
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">Visão completa da jornada</span>
+            <h4>Do briefing à publicação</h4>
+            <p>Cada tela mapeada com suas entradas, saídas e decisões. Pontos de fricção identificados e eliminados antes do design visual.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXECUÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Execução</div>
+        <h2>Funcionalidades que transformaram o fluxo</h2>
+        <div class="lift-exec-grid lxd-exec-grid-3x2">
+          <div class="lift-exec-card">
+            <h4>Drag-and-drop</h4>
+            <p>Arrastar componentes diretamente para a área de edição. Sem menus complexos, sem configuração prévia.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Edição inline</h4>
+            <p>Editar texto, imagens e configurações diretamente no componente, sem abrir painéis laterais ou modais.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Preview em tempo real</h4>
+            <p>Visualizar exatamente como o aluno verá o conteúdo, em tempo real, durante a edição.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Reordenação simples</h4>
+            <p>Mover componentes para cima e para baixo com um gesto. Reorganizar uma aula inteira em segundos.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Componentes reutilizáveis</h4>
+            <p>Biblioteca de componentes padronizados integrada ao editor. Consistência garantida por design.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Autosave</h4>
+            <p>Salvamento automático contínuo. Nenhum trabalho perdido, nenhuma interrupção no fluxo criativo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESIGN SYSTEM -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Design System</div>
+        <h2>Integração com o Factory DS</h2>
+        <div class="lift-prose">
+          <p>O LXD Creator foi construído sobre o Factory Design System, garantindo que todos os componentes do editor seguissem os mesmos padrões visuais e de interação do ecossistema YDUQS.</p>
+          <p>Essa integração trouxe três benefícios diretos:</p>
+        </div>
+        <div class="lxd-ds-benefits">
+          <div class="lxd-ds-benefit">
+            <h4>Consistência</h4>
+            <p>Componentes do editor herdam tokens e padrões do DS. Qualquer atualização no sistema se propaga automaticamente.</p>
+          </div>
+          <div class="lxd-ds-benefit">
+            <h4>Escalabilidade</h4>
+            <p>Novos componentes de conteúdo seguem a mesma estrutura. Escalar a biblioteca é adicionar, não reconstruir.</p>
+          </div>
+          <div class="lxd-ds-benefit">
+            <h4>Reutilização</h4>
+            <p>Componentes do editor são os mesmos que o aluno vê. Uma fonte de verdade para criação e consumo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SISTEMA (DIFERENCIAL) -->
+      <section class="case-section lift-section-wide reveal">
+        <div class="case-section-label">Sistema</div>
+        <h2>Do editor à publicação — um fluxo contínuo</h2>
+        <p class="lift-arch-intro">O diferencial do LXD Creator é eliminar as transições entre ferramentas. O conteúdo nasce, é editado, revisado e publicado no mesmo ambiente.</p>
+
+        <div class="lift-arch-visual">
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">01</span>
+            <h4>Editor Visual</h4>
+            <p>Interface de criação com drag-and-drop, edição inline e preview em tempo real.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">02</span>
+            <h4>Componentes</h4>
+            <p>Biblioteca padronizada integrada ao Factory DS. Consistência garantida por design.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">03</span>
+            <h4>CMS (Strapi)</h4>
+            <p>Backend que armazena e versiona o conteúdo. Invisível para o LXD — toda interação é via editor visual.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">04</span>
+            <h4>Publicação</h4>
+            <p>Conteúdo publicado diretamente para a plataforma do aluno. Um clique, zero handoff.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO PRODUTO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Impacto</div>
+        <h2>Resultados no produto</h2>
+        <div class="lift-impact-grid">
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">2.5x</span>
+            <span class="lift-impact-label">Mais rápido para produzir conteúdo</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">-60%</span>
+            <span class="lift-impact-label">Uso de ferramentas paralelas</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">80%</span>
+            <span class="lift-impact-label">Consistência visual entre conteúdos</span>
+          </div>
+        </div>
+
+        <div class="lift-compare" style="margin-top:var(--s48)">
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-before">Antes</div>
+            <ul class="lift-compare-list">
+              <li>3 ferramentas desconectadas</li>
+              <li>Fluxo fragmentado e lento</li>
+              <li>Erros descobertos após publicação</li>
+              <li>Dependência de suporte técnico</li>
+              <li>Inconsistência entre conteúdos</li>
+            </ul>
+          </div>
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-after">Depois</div>
+            <ul class="lift-compare-list">
+              <li>1 fluxo integrado</li>
+              <li>Criação visual e direta</li>
+              <li>Preview em tempo real</li>
+              <li>Autonomia total dos LXDs</li>
+              <li>Consistência garantida por design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO NO TIME -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Impacto no time</div>
+        <h2>O que mudou na operação</h2>
+        <div class="lift-org-grid">
+          <div class="lift-org-item">
+            <h4>Maior autonomia</h4>
+            <p>LXDs passaram a criar e publicar conteúdo sem depender de suporte técnico ou aprovações intermediárias.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Menos retrabalho</h4>
+            <p>Preview em tempo real eliminou o ciclo de "publica → descobre erro → corrige". Erros são pegos antes de sair.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Menor esforço cognitivo</h4>
+            <p>Interface visual reduziu a carga mental. Criar conteúdo passou a ser sobre conteúdo, não sobre configuração.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Maior velocidade</h4>
+            <p>O tempo médio de produção caiu significativamente. Times conseguem entregar mais com o mesmo headcount.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- APRENDIZADOS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Aprendizados</div>
+        <h2>O que esse projeto me ensinou</h2>
+        <ul class="case-list">
+          <li><strong>Ferramentas internas são produtos.</strong> Merecem o mesmo rigor de pesquisa, design e iteração que produtos externos. Quem usa diariamente merece uma experiência excelente.</li>
+          <li><strong>Produtividade é UX.</strong> Reduzir cliques, eliminar trocas de contexto e dar feedback imediato são decisões de experiência com impacto direto no negócio.</li>
+          <li><strong>Simplificar o fluxo gera mais impacto que adicionar features.</strong> Remover etapas desnecessárias teve mais efeito na produtividade do que qualquer funcionalidade nova.</li>
+          <li><strong>Co-criação acelera decisões.</strong> Envolver LXDs desde o discovery reduziu ciclos de validação e aumentou a confiança nas decisões de design.</li>
+          <li><strong>Design System como acelerador.</strong> Construir sobre o Factory DS permitiu focar no problema de produto, não em reinventar componentes.</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="lift-cta container reveal">
+      <h2>Criando ferramentas que escalam produção e qualidade.</h2>
+      <p>Se você precisa transformar fluxos operacionais complexos em experiências simples e produtivas, vamos conversar.</p>
+      <a href="index.html#contact" class="btn-hero-primary">Entrar em contato <span>→</span></a>
+    </section>
+
+    <!-- ====================== NEXT ====================== -->
+    <section class="case-next container reveal">
+      <p class="case-next-label">Próximo projeto</p>
+      <a href="lab-virtual.html" class="case-next-link">Laboratório Virtual — Ensino prático com -R$2M em custos <span>→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

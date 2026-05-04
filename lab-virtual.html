@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case — Laboratório Virtual | JP Gonçalves</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page lab-case">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Voltar aos projetos</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder case-hero-lab">
+        <div class="case-hero-overlay">
+          <h2>Laboratório Virtual — Escalando ensino prático com redução de custos</h2>
+          <p>Como criamos uma experiência imersiva para ensino remoto de enfermagem, reduzindo mais de R$2 milhões em custos operacionais.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value lab-metric-highlight">-R$2M+</span>
+          <span class="metric-label">Custos operacionais</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">3 meses</span>
+          <span class="metric-label">Do conceito à entrega</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">↑ Acesso</span>
+          <span class="metric-label">Ensino prático no EAD</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">↑ Engajamento</span>
+          <span class="metric-label">Alunos de enfermagem</span>
+        </div>
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Product Design</span>
+        <span>Mobile First</span>
+        <span>EdTech</span>
+        <span>Simulação</span>
+        <span>Saúde</span>
+      </div>
+    </section>
+
+    <!-- ====================== BODY ====================== -->
+    <article class="case-body container">
+
+      <!-- CONTEXTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Contexto</div>
+        <h2>Ensino prático em crise — e uma oportunidade de transformação</h2>
+        <div class="lift-prose">
+          <p>A YDUQS investia mais de R$2 milhões por ano em uma empresa terceirizada para fornecer ambientes de simulação prática para cursos de saúde. A solução era cara, pouco flexível e limitava o acesso dos alunos a horários e dispositivos específicos.</p>
+          <p>Com a aceleração do ensino remoto durante a pandemia, a limitação se tornou insustentável: alunos de enfermagem precisavam de experiência prática para se formar, mas não tinham acesso a laboratórios físicos. A qualidade educacional estava em risco.</p>
+          <p>A pergunta que recebemos foi direta: <strong>"É possível criar uma experiência de laboratório virtual internamente, com qualidade, em 3 meses?"</strong></p>
+        </div>
+      </section>
+
+      <!-- DESAFIO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Desafio</div>
+        <h2>Prazo curto, complexidade alta, impacto enorme</h2>
+        <div class="lift-prose">
+          <p>Esse não era um projeto comum de redesign. Era uma aposta estratégica com implicações financeiras, educacionais e operacionais simultâneas.</p>
+        </div>
+        <div class="lift-challenge-grid">
+          <div class="lift-challenge-card">
+            <h4>3 meses de prazo</h4>
+            <p>Do conceito à entrega em produção. Sem margem para ciclos longos de discovery ou iterações extensas. Cada decisão precisava ser certeira.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Experiência imersiva</h4>
+            <p>Simular um ambiente real de CME (Central de Material e Esterilização) com fidelidade suficiente para que o aluno aprenda procedimentos reais.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Mobile first obrigatório</h4>
+            <p>A maioria dos alunos EAD acessa pelo celular. A experiência precisava funcionar perfeitamente em telas pequenas, sem perder imersão.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Precisão técnica</h4>
+            <p>Área de saúde exige rigor. Cada etapa do procedimento simulado precisava ser validada por especialistas em enfermagem. Erro não era opção.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEMA COM IMPACTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Problema</div>
+        <h2>O custo da dependência externa</h2>
+        <ul class="case-list lift-problem-list">
+          <li><strong>Mais de R$2 milhões/ano</strong> pagos a fornecedor externo por uma solução que a instituição não controlava e não podia customizar.</li>
+          <li><strong>Acesso limitado</strong> — alunos só podiam usar a simulação em horários específicos e em dispositivos compatíveis, excluindo boa parte da base EAD.</li>
+          <li><strong>Qualidade questionável</strong> — a solução terceirizada não atendia os padrões pedagógicos que os coordenadores de enfermagem exigiam.</li>
+          <li><strong>Zero escalabilidade</strong> — expandir para outras disciplinas significava renegociar contratos e aumentar custos proporcionalmente.</li>
+          <li><strong>Dependência total</strong> — qualquer mudança no conteúdo ou na experiência dependia do roadmap do fornecedor, não do nosso.</li>
+        </ul>
+      </section>
+
+      <!-- DECISÕES CHAVE -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Decisões chave</div>
+        <h2>Quatro apostas sob pressão</h2>
+        <div class="lift-decisions">
+          <div class="lift-decision">
+            <div class="lift-decision-num">01</div>
+            <div>
+              <h4>Mobile first como estratégia de acesso</h4>
+              <p><strong>Decisão:</strong> Projetar a experiência inteira para mobile como plataforma primária, não como adaptação.</p>
+              <p><strong>Motivo:</strong> 70%+ dos alunos EAD acessam pelo celular. Começar pelo desktop seria projetar para a minoria e adaptar para a maioria.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">02</div>
+            <div>
+              <h4>Simulação realista, não fotorrealista</h4>
+              <p><strong>Decisão:</strong> Focar em fidelidade funcional (procedimentos corretos, feedback claro) ao invés de fidelidade visual extrema (3D realista).</p>
+              <p><strong>Motivo:</strong> O objetivo é aprendizado, não imersão cinematográfica. Simulação funcional entrega valor educacional com metade do esforço técnico.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">03</div>
+            <div>
+              <h4>Começar pelo CME de enfermagem</h4>
+              <p><strong>Decisão:</strong> Escolher um caso específico (Central de Material e Esterilização) como MVP ao invés de tentar cobrir múltiplas disciplinas.</p>
+              <p><strong>Motivo:</strong> Escopo controlado permite entregar com qualidade em 3 meses. Sucesso no CME valida o modelo para expansão futura.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">04</div>
+            <div>
+              <h4>Integrar com o Design System existente</h4>
+              <p><strong>Decisão:</strong> Construir sobre o Factory DS ao invés de criar componentes do zero.</p>
+              <p><strong>Motivo:</strong> Acelerar desenvolvimento e garantir consistência com o ecossistema YDUQS. Menos tempo em UI, mais tempo em experiência.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRADE-OFFS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Trade-offs</div>
+        <h2>O que aceitamos para entregar em 3 meses</h2>
+        <div class="lift-prose">
+          <p>Com prazo agressivo e escopo ambicioso, cada decisão de "não fazer" foi tão importante quanto cada decisão de "fazer".</p>
+        </div>
+        <div class="lift-tradeoffs">
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Reduzimos complexidade visual da simulação</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para garantir performance em dispositivos móveis de entrada</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Limitamos o escopo a um único cenário (CME)</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para entregar com qualidade no prazo e validar o modelo</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">Priorizamos experiência funcional sobre detalhamento extremo</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">Para focar no que gera aprendizado real, não impressão visual</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONCEPÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Concepção</div>
+        <h2>Simulando um ambiente real em uma tela de celular</h2>
+        <div class="lift-prose">
+          <p>O CME (Central de Material e Esterilização) é um ambiente hospitalar onde instrumentos cirúrgicos são limpos, esterilizados e preparados. Enfermeiros precisam dominar cada etapa do processo — e erros podem ter consequências graves.</p>
+          <p>Criamos um ambiente virtual interativo que reproduz a jornada completa do profissional dentro do CME: desde a recepção do material até a liberação para uso. Cada etapa é uma interação guiada com feedback imediato sobre acertos e erros.</p>
+          <p>A experiência foi projetada para ser <strong>progressiva</strong> — o aluno começa com etapas simples e avança para procedimentos mais complexos, construindo confiança antes de enfrentar o ambiente real.</p>
+        </div>
+      </section>
+
+      <!-- EXECUÇÃO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Execução</div>
+        <h2>3 meses do conceito à produção</h2>
+        <div class="lift-prose">
+          <p>O desenvolvimento foi organizado em sprints de 2 semanas com validação contínua. Cada sprint entregava uma parte funcional da simulação, testada com alunos reais e revisada por especialistas.</p>
+        </div>
+        <div class="lift-exec-grid">
+          <div class="lift-exec-card">
+            <h4>Mês 1 — Fundação</h4>
+            <p>Discovery com especialistas em enfermagem. Mapeamento do fluxo do CME. Definição da arquitetura de interação. Primeiros wireframes e protótipos.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Mês 2 — Construção</h4>
+            <p>Design de alta fidelidade. Desenvolvimento mobile first. Integração com Factory DS. Testes internos com time de produto e educação.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Mês 3 — Validação</h4>
+            <p>Testes com alunos de enfermagem. Ajustes de UI/UX baseados em feedback. Validação final com especialistas. Deploy em produção.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Colaboração contínua</h4>
+            <p>Alinhamento semanal com coordenadores de enfermagem, time de produto e engenharia. Decisões rápidas, sem burocracia.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALIDAÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Validação</div>
+        <h2>Testado com quem realmente importa</h2>
+        <div class="lift-prose">
+          <p>A validação não foi um evento único no final — foi um processo contínuo integrado ao desenvolvimento.</p>
+        </div>
+        <div class="lab-validation-grid">
+          <div class="lab-validation-item">
+            <h4>Testes com alunos</h4>
+            <p>Sessões de usabilidade com alunos de enfermagem em diferentes níveis. Identificamos pontos de confusão na navegação e ajustamos a hierarquia de informação.</p>
+          </div>
+          <div class="lab-validation-item">
+            <h4>Revisão com especialistas</h4>
+            <p>Cada etapa do procedimento simulado foi validada por profissionais de enfermagem. Precisão técnica era inegociável.</p>
+          </div>
+          <div class="lab-validation-item">
+            <h4>Ajustes iterativos</h4>
+            <p>Feedback transformado em melhorias a cada sprint. A versão final incorporou mais de 40 ajustes identificados em testes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SISTEMA -->
+      <section class="case-section lift-section-wide reveal">
+        <div class="case-section-label">Sistema</div>
+        <h2>Da tela ao aprendizado — um fluxo contínuo</h2>
+        <p class="lift-arch-intro">O Laboratório Virtual transforma a tela do celular em um ambiente de aprendizado prático, guiando o aluno por cada etapa do procedimento real.</p>
+
+        <div class="lift-arch-visual">
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">01</span>
+            <h4>Aluno acessa</h4>
+            <p>Login via plataforma do aluno. Mobile first, sem instalação adicional.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">02</span>
+            <h4>Ambiente virtual</h4>
+            <p>Simulação interativa do CME com navegação guiada e feedback em tempo real.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">03</span>
+            <h4>Simulação prática</h4>
+            <p>Execução de procedimentos com validação de cada etapa. Erros geram feedback educativo, não punição.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">04</span>
+            <h4>Aprendizado aplicado</h4>
+            <p>Aluno conclui com confiança para enfrentar o ambiente real. Progresso registrado na plataforma.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO FINANCEIRO -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Impacto</div>
+        <h2>Resultados que mudaram a operação</h2>
+        <div class="lift-impact-grid">
+          <div class="lift-impact-card lab-impact-money">
+            <span class="lift-impact-value">-R$2M+</span>
+            <span class="lift-impact-label">Economia anual em custos operacionais</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">100%</span>
+            <span class="lift-impact-label">Acesso ao ensino prático no EAD</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">3 meses</span>
+            <span class="lift-impact-label">Do conceito à produção</span>
+          </div>
+        </div>
+
+        <div class="lift-compare" style="margin-top:48px">
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-before">Antes</div>
+            <ul class="lift-compare-list">
+              <li>R$2M+/ano em fornecedor externo</li>
+              <li>Acesso limitado por horário e dispositivo</li>
+              <li>Sem controle sobre conteúdo</li>
+              <li>Zero escalabilidade</li>
+              <li>Dependência total do fornecedor</li>
+            </ul>
+          </div>
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-after">Depois</div>
+            <ul class="lift-compare-list">
+              <li>Solução interna com custo controlado</li>
+              <li>Acesso 24/7 em qualquer dispositivo</li>
+              <li>Conteúdo próprio e customizável</li>
+              <li>Modelo replicável para outras disciplinas</li>
+              <li>Independência total</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO NO NEGÓCIO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Impacto no negócio</div>
+        <h2>Além da economia — independência estratégica</h2>
+        <div class="lift-org-grid">
+          <div class="lift-org-item">
+            <h4>Redução de custos operacionais</h4>
+            <p>Eliminação do contrato com fornecedor externo. Economia superior a R$2 milhões por ano, com tendência de aumento conforme escala.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Escalabilidade da solução</h4>
+            <p>Modelo replicável para outras disciplinas e cenários. A arquitetura permite criar novos laboratórios sem recomeçar do zero.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Independência de fornecedores</h4>
+            <p>Controle total sobre conteúdo, experiência e roadmap. Mudanças são feitas no ritmo do negócio, não do fornecedor.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Diferencial competitivo</h4>
+            <p>Laboratório virtual próprio como argumento de venda para novos alunos. Qualidade educacional como diferencial de mercado.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPACTO NO USUÁRIO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Impacto no usuário</div>
+        <h2>O que mudou para o aluno</h2>
+        <div class="lab-user-grid">
+          <div class="lab-user-item">
+            <div class="lab-user-num">01</div>
+            <div>
+              <h4>Aprendizado mais imersivo</h4>
+              <p>Simulação interativa que reproduz o ambiente real. O aluno pratica procedimentos, não apenas lê sobre eles.</p>
+            </div>
+          </div>
+          <div class="lab-user-item">
+            <div class="lab-user-num">02</div>
+            <div>
+              <h4>Confiança antes da prática real</h4>
+              <p>Repetir procedimentos em ambiente seguro constrói confiança. O aluno chega ao estágio mais preparado.</p>
+            </div>
+          </div>
+          <div class="lab-user-item">
+            <div class="lab-user-num">03</div>
+            <div>
+              <h4>Acesso facilitado</h4>
+              <p>Disponível 24/7, em qualquer dispositivo. Sem agendamento, sem deslocamento, sem limitação de horário.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESCALABILIDADE -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Escalabilidade</div>
+        <h2>Um modelo, múltiplas disciplinas</h2>
+        <div class="lift-prose">
+          <p>O Laboratório Virtual foi projetado desde o início como um <strong>modelo replicável</strong>, não como uma solução pontual. A arquitetura separa a engine de simulação do conteúdo específico de cada disciplina.</p>
+          <p>Isso significa que expandir para novos cenários — farmácia, fisioterapia, biomedicina — é uma questão de criar conteúdo, não de reconstruir tecnologia. O investimento inicial se paga exponencialmente com cada nova disciplina adicionada.</p>
+        </div>
+        <div class="lift-highlight">
+          <p>"O CME foi o primeiro caso. Mas a arquitetura foi pensada para que cada novo laboratório custe uma fração do primeiro — em tempo e em dinheiro."</p>
+        </div>
+      </section>
+
+      <!-- APRENDIZADOS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Aprendizados</div>
+        <h2>O que esse projeto me ensinou</h2>
+        <ul class="case-list">
+          <li><strong>Restrição gera foco.</strong> O prazo de 3 meses forçou decisões rápidas e eliminou discussões improdutivas. Cada feature precisava justificar sua existência.</li>
+          <li><strong>Mobile first é estratégico em educação.</strong> Não é uma decisão técnica — é uma decisão de acesso. Projetar para mobile primeiro é projetar para inclusão.</li>
+          <li><strong>Colaboração com especialistas aumenta qualidade exponencialmente.</strong> Trabalhar lado a lado com enfermeiros transformou a simulação de "interface bonita" em "ferramenta de aprendizado real".</li>
+          <li><strong>MVP bem definido acelera impacto.</strong> Começar pelo CME permitiu entregar valor real em 3 meses e validar o modelo antes de escalar.</li>
+          <li><strong>Impacto financeiro abre portas.</strong> Quando design gera economia de R$2M+, a conversa sobre investimento em UX muda completamente.</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="lift-cta container reveal">
+      <h2>Projetando experiências que geram impacto real — no negócio e no usuário.</h2>
+      <p>Se você precisa transformar restrições em oportunidades e entregar produtos com impacto mensurável, vamos conversar.</p>
+      <a href="index.html#contact" class="btn-hero-primary">Entrar em contato <span>→</span></a>
+    </section>
+
+    <!-- ====================== NEXT ====================== -->
+    <section class="case-next container reveal">
+      <p class="case-next-label">Próximo projeto</p>
+      <a href="case.html" class="case-next-link">Nova Home da SAVA — Sala Virtual do Aluno <span>→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

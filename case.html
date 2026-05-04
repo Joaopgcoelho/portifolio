@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case — Nova Home SAVA | JP Gonçalves</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page">
+
+    <!-- COVER -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Voltar aos projetos</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder case-hero-sava">
+        <div class="case-hero-overlay">
+          <h2>Nova Home da SAVA — Sala Virtual do Aluno</h2>
+          <p>Redesign da experiência do aluno na YDUQS, transformando a interface em uma ferramenta de autogestão acadêmica.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value">90%</span>
+          <span class="metric-label">CSAT alcançado</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">Lift 2.0</span>
+          <span class="metric-label">Design System estreado</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">Multi-marca</span>
+          <span class="metric-label">IBMEC, Estácio e +</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">Milhares</span>
+          <span class="metric-label">Alunos impactados</span>
+        </div>
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Product Design</span><span>UX Research</span><span>Design System</span><span>EdTech</span>
+      </div>
+    </section>
+
+    <!-- CASE BODY -->
+    <article class="case-body container">
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Contexto</div>
+        <h2>O problema e o cenário</h2>
+        <p>A Sala Virtual do Aluno (SAVA) é o principal ponto de contato digital dos estudantes da YDUQS. A home anterior não refletia as necessidades reais dos alunos: informações dispersas, navegação confusa e falta de visibilidade sobre progresso acadêmico.</p>
+        <p>O time de produto identificou a oportunidade de transformar a interface em uma ferramenta de autogestão, devolvendo tempo e foco ao aluno.</p>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Diagnóstico</div>
+        <h2>O que encontramos</h2>
+        <ul class="case-list">
+          <li>Ausência de visibilidade sobre progresso nas disciplinas</li>
+          <li>Navegação baseada em estrutura interna, não em comportamento do aluno</li>
+          <li>Falta de atalhos para ações críticas como provas e prazos</li>
+          <li>Inconsistência visual entre marcas do grupo (IBMEC, Estácio)</li>
+          <li>Recurso "Continue de onde parou" com precisão insuficiente</li>
+        </ul>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Estratégia</div>
+        <h2>Decisões e raciocínio</h2>
+        <p>Optamos por uma abordagem centrada em dados reais de comportamento e uso. Reorganizamos a arquitetura de informação com base em métricas de navegação e feedback qualitativo dos alunos.</p>
+        <div class="case-highlight">
+          <p>"Fomos além de uma tela nova — entregamos uma experiência estratégica para remover os obstáculos do dia a dia acadêmico e centralizar o que realmente importa."</p>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Execução</div>
+        <h2>Design e implementação</h2>
+        <p>Trabalhamos em ciclos iterativos com validação contínua. As principais entregas incluíram:</p>
+        <ul class="case-list">
+          <li>Carrossel de disciplinas com barras de progresso e "Continue de onde parou" aprimorado</li>
+          <li>Painel de Provas Inteligente com atalhos diretos e filtros de status</li>
+          <li>Menu lateral reorganizado com base em dados reais de comportamento</li>
+        </ul>
+        <div class="case-images">
+          <div class="case-img-placeholder">
+            <span>Wireframe — Nova arquitetura da home</span>
+          </div>
+          <div class="case-img-placeholder">
+            <span>UI Final — SAVA redesenhada</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Sistema</div>
+        <h2>Lift 2.0 — Design System</h2>
+        <p>A nova home foi viabilizada pela estreia do Lift 2.0, o design system da YDUQS, que trouxe a escalabilidade e dinâmica necessária para replicar a qualidade em todas as marcas do grupo.</p>
+        <div class="case-images">
+          <div class="case-img-placeholder wide">
+            <span>Lift 2.0 — Componentes escaláveis para multi-marca</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Impacto</div>
+        <h2>Resultados mensuráveis</h2>
+        <div class="case-metrics-inline">
+          <div class="metric-card">
+            <span class="metric-value">90%</span>
+            <span class="metric-label">CSAT — marca inédita na plataforma</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">Multi-marca</span>
+            <span class="metric-label">Escalado para IBMEC, Estácio e +</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">Lift 2.0</span>
+            <span class="metric-label">Design System estreado em produção</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-label">Aprendizados</div>
+        <h2>Reflexões</h2>
+        <ul class="case-list">
+          <li>Dados de comportamento real são mais valiosos que suposições de stakeholders</li>
+          <li>Design System como acelerador de qualidade multi-marca</li>
+          <li>Simplificar a navegação tem impacto direto em satisfação</li>
+          <li>Colaboração cross-funcional é o que transforma design em resultado</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <section class="case-next container reveal">
+      <p class="case-next-label">Próximo projeto</p>
+      <a href="lift-case.html" class="case-next-link">Lift 2.0 — Design System escalável <span>→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
