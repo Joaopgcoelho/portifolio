@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Gonçalves — Product Designer</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="../logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html" class="nav-active">Home</a>
+        <a href="#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="../index.html" class="lang-toggle" aria-label="Versão em português">PT</a>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ====================== HERO ====================== -->
+    <section class="hero">
+      <div class="hero-content container">
+        <div class="hero-col-left">
+          <p class="hero-eyebrow anim-fade" data-delay="1">PRODUCT DESIGNER · DESIGN SYSTEMS · SYSTEM OPS</p>
+          <h1 class="hero-headline anim-fade" data-delay="2">I solve complex<br>problems with design.<br><span class="hero-headline-muted">I deliver real impact.</span></h1>
+          <p class="hero-sub anim-fade" data-delay="3">10+ years transforming digital operations into scalable products. Specialist in Design Systems, internal tools, and EdTech platforms at YDUQS.</p>
+          <div class="hero-actions anim-fade" data-delay="4">
+            <a href="#projects" class="btn-hero-primary">View projects <span>→</span></a>
+            <a href="https://www.linkedin.com/in/jpgoncalvesc/" target="_blank" rel="noopener" class="btn-hero-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-panel anim-fade" data-delay="2">
+        <img src="../photo.png" alt="João Paulo Gonçalves — Product Designer" class="hero-image" loading="eager" />
+        <div class="hero-image-fade"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PROOF ====================== -->
+    <section class="home-proof container anim-fade" data-delay="5">
+      <div class="proof-item">
+        <span class="proof-value">-R$2M</span>
+        <span class="proof-label">operational costs eliminated</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-value">3x</span>
+        <span class="proof-label">faster UI delivery</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-value">90%</span>
+        <span class="proof-label">Design System adoption</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-value">10+</span>
+        <span class="proof-label">years in digital products</span>
+      </div>
+    </section>
+
+    <!-- ====================== PROJECTS ====================== -->
+    <section id="projects" class="home-projects container reveal">
+      <div class="section-head">
+        <div class="section-id"><span class="num">01</span><h2>FEATURED PROJECTS</h2></div>
+      </div>
+
+      <div class="home-project-list">
+
+        <a href="lab-virtual.html" class="home-project-card reveal">
+          <div class="home-project-num">01</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">Virtual Lab · EdTech · Mobile First</span>
+            <h3>We eliminated R$2M/year in costs by building a virtual lab from scratch in 3 months</h3>
+            <p>An immersive experience for nursing education that replaced an external vendor and enabled 100% remote hands-on learning.</p>
+            <span class="home-project-link">Read full case →</span>
+          </div>
+        </a>
+
+        <a href="lxd-creator.html" class="home-project-card reveal">
+          <div class="home-project-num">02</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">LXD Creator · Product Design · CMS</span>
+            <h3>From 3 disconnected tools to 1 workflow — 2.5x productivity gain</h3>
+            <p>A visual authoring tool built on top of the CMS that centralized educational content production and eliminated rework.</p>
+            <span class="home-project-link">Read full case →</span>
+          </div>
+        </a>
+
+        <a href="lift-case.html" class="home-project-card reveal">
+          <div class="home-project-num">03</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">Lift 2.0 · Design System · Governance</span>
+            <h3>A Design System serving multiple brands with 90% adoption and zero duplication</h3>
+            <p>A 4-layer token architecture that allows swapping an entire brand identity without changing a single component.</p>
+            <span class="home-project-link">Read full case →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ====================== BEFORE VS AFTER ====================== -->
+    <section class="home-bva container reveal">
+      <div class="section-id"><span class="num">02</span><h2>WHAT CHANGES WHEN DESIGN IS STRATEGIC</h2></div>
+      <div class="home-bva-grid">
+        <div class="home-bva-col">
+          <div class="home-bva-label home-bva-before">Without strategic design</div>
+          <ul class="home-bva-list">
+            <li>Disconnected tools and constant rework</li>
+            <li>Duplicated components across teams</li>
+            <li>R$2M+/year on external vendors</li>
+            <li>Visual inconsistency across products</li>
+            <li>UI decisions without data</li>
+          </ul>
+        </div>
+        <div class="home-bva-col">
+          <div class="home-bva-label home-bva-after">With strategic design</div>
+          <ul class="home-bva-list">
+            <li>Integrated workflows and 2.5x productivity</li>
+            <li>Design System with 90% adoption</li>
+            <li>In-house solution with controlled costs</li>
+            <li>Consistency ensured by tokens</li>
+            <li>Decisions driven by research and metrics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DIFERENCIAL ====================== -->
+    <section class="home-approach container reveal">
+      <div class="section-id"><span class="num">03</span><h2>HOW I THINK ABOUT PRODUCT</h2></div>
+      <div class="approach-grid">
+        <div class="approach-card">
+          <h4>I build systems that scale</h4>
+          <p>Design Systems, tokens, governance — I build the infrastructure that enables teams to ship faster without losing consistency.</p>
+        </div>
+        <div class="approach-card">
+          <h4>I reduce operational complexity</h4>
+          <p>I turn fragmented workflows into integrated experiences. Fewer tools, fewer handoffs, less rework.</p>
+        </div>
+        <div class="approach-card">
+          <h4>I connect design, technology, and business</h4>
+          <p>Design decisions grounded in data, aligned with engineering, and driven by business impact.</p>
+        </div>
+        <div class="approach-card">
+          <h4>I make impact-driven decisions</h4>
+          <p>I prioritize what delivers measurable results. Explicit trade-offs, clear metrics, focus on delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DS PREVIEW ====================== -->
+    <section class="home-ds container reveal">
+      <div class="home-ds-content">
+        <div class="section-id"><span class="num">04</span><h2>DESIGN SYSTEMS</h2></div>
+        <h3>Well-built systems produce better products</h3>
+        <p>Experience with multi-layer tokens, structured governance, and multi-brand scale. Lift 2.0 is used by dozens of designers and developers at YDUQS.</p>
+        <a href="lift-case.html" class="btn-outline">View project <span>→</span></a>
+      </div>
+      <div class="home-ds-visual">
+        <div class="ds-mock">
+          <div class="ds-mock-sidebar">
+            <span class="ds-mock-title">▸ Foundations</span>
+            <span>Colors</span><span>Typography</span><span>Spacing</span>
+            <span class="ds-mock-title">▸ Components</span>
+            <span>Buttons</span><span>Inputs</span><span>Feedback</span>
+          </div>
+          <div class="ds-mock-content">
+            <div class="ds-mock-heading">/ Colors</div>
+            <div class="ds-mock-swatches">
+              <span style="background:#059669"></span><span style="background:#3B82F6"></span>
+              <span style="background:#F59E0B"></span><span style="background:#EF4444"></span>
+              <span style="background:#8B5CF6"></span>
+            </div>
+            <div class="ds-mock-swatches" style="margin-top:12px">
+              <span style="background:#E2E8F0"></span><span style="background:#94A3B8"></span>
+              <span style="background:#475569"></span><span style="background:#1E293B"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== ABOUT ====================== -->
+    <section class="home-about container reveal">
+      <div class="section-id"><span class="num">05</span><h2>ABOUT</h2></div>
+      <div class="home-about-content">
+        <div class="home-about-avatar">
+          <img src="../photo.png" alt="João Paulo Gonçalves" />
+        </div>
+        <div class="home-about-text">
+          <h3>A Product Designer who delivers measurable impact — not just interfaces.</h3>
+          <p>10+ years building products that scale. At YDUQS, I lead Design Systems, internal tools, and educational platforms for IBMEC, Estácio, and other brands. MBA in Business Management from Ibmec.</p>
+          <div class="home-about-tags">
+            <span>Design Systems</span>
+            <span>System Ops</span>
+            <span>Product Design</span>
+            <span>EdTech</span>
+          </div>
+          <a href="about.html" class="btn-outline">More about me <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CTA ====================== -->
+    <section id="contact" class="home-cta container reveal">
+      <h2>Let's build something<br>that truly scales?</h2>
+      <p>Available for product projects, Design Systems, and internal tools.</p>
+      <div class="home-cta-actions">
+        <a href="https://www.linkedin.com/in/jpgoncalvesc/" target="_blank" rel="noopener" class="btn-hero-primary">Get in touch <span>→</span></a>
+      </div>
+      <span class="home-cta-location">📍 Rio de Janeiro, Brazil</span>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

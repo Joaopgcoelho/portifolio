@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case — Virtual Lab | JP Gonçalves</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="../logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="../lab-virtual.html" class="lang-toggle" aria-label="Versão em português">PT</a>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page lab-case">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Back to projects</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder case-hero-lab">
+        <div class="case-hero-overlay">
+          <h2>Virtual Lab — Scaling hands-on learning with cost reduction</h2>
+          <p>How we created an immersive experience for remote nursing education, reducing over R$2 million in operational costs.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value lab-metric-highlight">-R$2M+</span>
+          <span class="metric-label">Operational costs</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">3 months</span>
+          <span class="metric-label">From concept to delivery</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">↑ Access</span>
+          <span class="metric-label">Hands-on learning in distance education</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">↑ Engagement</span>
+          <span class="metric-label">Nursing students</span>
+        </div>
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Product Design</span>
+        <span>Mobile First</span>
+        <span>EdTech</span>
+        <span>Simulation</span>
+        <span>Healthcare</span>
+      </div>
+    </section>
+
+    <!-- ====================== BODY ====================== -->
+    <article class="case-body container">
+
+      <!-- CONTEXT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Context</div>
+        <h2>Hands-on learning in crisis — and an opportunity for transformation</h2>
+        <div class="lift-prose">
+          <p>YDUQS was spending over R$2 million per year on a third-party company to provide practical simulation environments for healthcare courses. The solution was expensive, inflexible, and limited student access to specific schedules and devices.</p>
+          <p>With the acceleration of remote learning during the pandemic, the limitation became unsustainable: nursing students needed hands-on experience to graduate, but had no access to physical labs. Educational quality was at risk.</p>
+          <p>The question we received was direct: <strong>"Is it possible to build a virtual lab experience in-house, with quality, in 3 months?"</strong></p>
+        </div>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Challenge</div>
+        <h2>Tight deadline, high complexity, massive impact</h2>
+        <div class="lift-prose">
+          <p>This wasn't a typical redesign project. It was a strategic bet with simultaneous financial, educational, and operational implications.</p>
+        </div>
+        <div class="lift-challenge-grid">
+          <div class="lift-challenge-card">
+            <h4>3-month deadline</h4>
+            <p>From concept to production delivery. No room for long discovery cycles or extensive iterations. Every decision had to be on target.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Immersive experience</h4>
+            <p>Simulate a real CME (Central Sterile Supply Department) environment with enough fidelity for students to learn real procedures.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Mobile first mandatory</h4>
+            <p>Most distance education students access via mobile. The experience needed to work flawlessly on small screens without losing immersion.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Technical precision</h4>
+            <p>Healthcare demands rigor. Every step of the simulated procedure needed validation by nursing specialists. Error was not an option.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEM WITH IMPACT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Problem</div>
+        <h2>The cost of external dependency</h2>
+        <ul class="case-list lift-problem-list">
+          <li><strong>Over R$2 million/year</strong> paid to an external vendor for a solution the institution didn't control and couldn't customize.</li>
+          <li><strong>Limited access</strong> — students could only use the simulation at specific times and on compatible devices, excluding a large portion of the distance education base.</li>
+          <li><strong>Questionable quality</strong> — the third-party solution didn't meet the pedagogical standards that nursing coordinators required.</li>
+          <li><strong>Zero scalability</strong> — expanding to other disciplines meant renegotiating contracts and proportionally increasing costs.</li>
+          <li><strong>Total dependency</strong> — any change in content or experience depended on the vendor's roadmap, not ours.</li>
+        </ul>
+      </section>
+
+      <!-- KEY DECISIONS -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Key decisions</div>
+        <h2>Four bets under pressure</h2>
+        <div class="lift-decisions">
+          <div class="lift-decision">
+            <div class="lift-decision-num">01</div>
+            <div>
+              <h4>Mobile first as an access strategy</h4>
+              <p><strong>Decision:</strong> Design the entire experience for mobile as the primary platform, not as an adaptation.</p>
+              <p><strong>Rationale:</strong> 70%+ of distance education students access via mobile. Starting with desktop would mean designing for the minority and adapting for the majority.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">02</div>
+            <div>
+              <h4>Realistic simulation, not photorealistic</h4>
+              <p><strong>Decision:</strong> Focus on functional fidelity (correct procedures, clear feedback) instead of extreme visual fidelity (realistic 3D).</p>
+              <p><strong>Rationale:</strong> The goal is learning, not cinematic immersion. Functional simulation delivers educational value with half the technical effort.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">03</div>
+            <div>
+              <h4>Start with the nursing CME</h4>
+              <p><strong>Decision:</strong> Choose a specific case (Central Sterile Supply Department) as the MVP instead of trying to cover multiple disciplines.</p>
+              <p><strong>Rationale:</strong> Controlled scope allows delivering with quality in 3 months. Success with the CME validates the model for future expansion.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">04</div>
+            <div>
+              <h4>Integrate with the existing Design System</h4>
+              <p><strong>Decision:</strong> Build on Factory DS instead of creating components from scratch.</p>
+              <p><strong>Rationale:</strong> Accelerate development and ensure consistency with the YDUQS ecosystem. Less time on UI, more time on experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRADE-OFFS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Trade-offs</div>
+        <h2>What we accepted to deliver in 3 months</h2>
+        <div class="lift-prose">
+          <p>With an aggressive deadline and ambitious scope, every decision to "not do" was as important as every decision to "do."</p>
+        </div>
+        <div class="lift-tradeoffs">
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">We reduced simulation visual complexity</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">To ensure performance on entry-level mobile devices</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">We limited scope to a single scenario (CME)</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">To deliver with quality on time and validate the model</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">We prioritized functional experience over extreme detail</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">To focus on what generates real learning, not visual impression</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONCEPTION -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Conception</div>
+        <h2>Simulating a real environment on a phone screen</h2>
+        <div class="lift-prose">
+          <p>The CME (Central Sterile Supply Department) is a hospital environment where surgical instruments are cleaned, sterilized, and prepared. Nurses must master every step of the process — and errors can have serious consequences.</p>
+          <p>We created an interactive virtual environment that reproduces the professional's complete journey within the CME: from material reception to release for use. Each step is a guided interaction with immediate feedback on correct and incorrect actions.</p>
+          <p>The experience was designed to be <strong>progressive</strong> — the student starts with simple steps and advances to more complex procedures, building confidence before facing the real environment.</p>
+        </div>
+      </section>
+
+      <!-- EXECUTION -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Execution</div>
+        <h2>3 months from concept to production</h2>
+        <div class="lift-prose">
+          <p>Development was organized in 2-week sprints with continuous validation. Each sprint delivered a functional part of the simulation, tested with real students and reviewed by specialists.</p>
+        </div>
+        <div class="lift-exec-grid">
+          <div class="lift-exec-card">
+            <h4>Month 1 — Foundation</h4>
+            <p>Discovery with nursing specialists. CME workflow mapping. Interaction architecture definition. First wireframes and prototypes.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Month 2 — Build</h4>
+            <p>High-fidelity design. Mobile first development. Factory DS integration. Internal testing with product and education teams.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Month 3 — Validation</h4>
+            <p>Testing with nursing students. UI/UX adjustments based on feedback. Final validation with specialists. Production deploy.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Continuous collaboration</h4>
+            <p>Weekly alignment with nursing coordinators, product team, and engineering. Fast decisions, no bureaucracy.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALIDATION -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Validation</div>
+        <h2>Tested with the people who truly matter</h2>
+        <div class="lift-prose">
+          <p>Validation wasn't a one-time event at the end — it was a continuous process integrated into development.</p>
+        </div>
+        <div class="lab-validation-grid">
+          <div class="lab-validation-item">
+            <h4>Student testing</h4>
+            <p>Usability sessions with nursing students at different levels. We identified navigation confusion points and adjusted the information hierarchy.</p>
+          </div>
+          <div class="lab-validation-item">
+            <h4>Specialist review</h4>
+            <p>Every step of the simulated procedure was validated by nursing professionals. Technical precision was non-negotiable.</p>
+          </div>
+          <div class="lab-validation-item">
+            <h4>Iterative adjustments</h4>
+            <p>Feedback turned into improvements each sprint. The final version incorporated over 40 adjustments identified in testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYSTEM -->
+      <section class="case-section lift-section-wide reveal">
+        <div class="case-section-label">System</div>
+        <h2>From screen to learning — a continuous flow</h2>
+        <p class="lift-arch-intro">The Virtual Lab transforms the phone screen into a hands-on learning environment, guiding the student through each step of the real procedure.</p>
+
+        <div class="lift-arch-visual">
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">01</span>
+            <h4>Student accesses</h4>
+            <p>Login via student platform. Mobile first, no additional installation.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">02</span>
+            <h4>Virtual environment</h4>
+            <p>Interactive CME simulation with guided navigation and real-time feedback.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">03</span>
+            <h4>Hands-on simulation</h4>
+            <p>Procedure execution with step-by-step validation. Errors generate educational feedback, not punishment.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block">
+            <span class="lift-arch-tag">04</span>
+            <h4>Applied learning</h4>
+            <p>Student finishes with confidence to face the real environment. Progress recorded on the platform.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINANCIAL IMPACT -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Impact</div>
+        <h2>Results that changed operations</h2>
+        <div class="lift-impact-grid">
+          <div class="lift-impact-card lab-impact-money">
+            <span class="lift-impact-value">-R$2M+</span>
+            <span class="lift-impact-label">Annual savings in operational costs</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">100%</span>
+            <span class="lift-impact-label">Access to hands-on learning in distance education</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">3 months</span>
+            <span class="lift-impact-label">From concept to production</span>
+          </div>
+        </div>
+
+        <div class="lift-compare" style="margin-top:48px">
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-before">Before</div>
+            <ul class="lift-compare-list">
+              <li>R$2M+/year on external vendor</li>
+              <li>Access limited by schedule and device</li>
+              <li>No control over content</li>
+              <li>Zero scalability</li>
+              <li>Total vendor dependency</li>
+            </ul>
+          </div>
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-after">After</div>
+            <ul class="lift-compare-list">
+              <li>In-house solution with controlled costs</li>
+              <li>24/7 access on any device</li>
+              <li>Proprietary and customizable content</li>
+              <li>Replicable model for other disciplines</li>
+              <li>Total independence</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUSINESS IMPACT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Business impact</div>
+        <h2>Beyond savings — strategic independence</h2>
+        <div class="lift-org-grid">
+          <div class="lift-org-item">
+            <h4>Operational cost reduction</h4>
+            <p>Elimination of the external vendor contract. Savings exceeding R$2 million per year, with a growing trend as scale increases.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Solution scalability</h4>
+            <p>Replicable model for other disciplines and scenarios. The architecture allows creating new labs without starting from scratch.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Vendor independence</h4>
+            <p>Full control over content, experience, and roadmap. Changes are made at the business's pace, not the vendor's.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Competitive advantage</h4>
+            <p>A proprietary virtual lab as a selling point for new students. Educational quality as a market differentiator.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- USER IMPACT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">User impact</div>
+        <h2>What changed for the student</h2>
+        <div class="lab-user-grid">
+          <div class="lab-user-item">
+            <div class="lab-user-num">01</div>
+            <div>
+              <h4>More immersive learning</h4>
+              <p>Interactive simulation that reproduces the real environment. The student practices procedures, not just reads about them.</p>
+            </div>
+          </div>
+          <div class="lab-user-item">
+            <div class="lab-user-num">02</div>
+            <div>
+              <h4>Confidence before real practice</h4>
+              <p>Repeating procedures in a safe environment builds confidence. The student arrives at their internship better prepared.</p>
+            </div>
+          </div>
+          <div class="lab-user-item">
+            <div class="lab-user-num">03</div>
+            <div>
+              <h4>Easier access</h4>
+              <p>Available 24/7, on any device. No scheduling, no commuting, no time restrictions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCALABILITY -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Scalability</div>
+        <h2>One model, multiple disciplines</h2>
+        <div class="lift-prose">
+          <p>The Virtual Lab was designed from the start as a <strong>replicable model</strong>, not a one-off solution. The architecture separates the simulation engine from the specific content of each discipline.</p>
+          <p>This means expanding to new scenarios — pharmacy, physiotherapy, biomedicine — is a matter of creating content, not rebuilding technology. The initial investment pays off exponentially with each new discipline added.</p>
+        </div>
+        <div class="lift-highlight">
+          <p>"The CME was the first case. But the architecture was designed so that each new lab costs a fraction of the first — in time and money."</p>
+        </div>
+      </section>
+
+      <!-- KEY TAKEAWAYS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Key takeaways</div>
+        <h2>What this project taught me</h2>
+        <ul class="case-list">
+          <li><strong>Constraints drive focus.</strong> The 3-month deadline forced quick decisions and eliminated unproductive discussions. Every feature had to justify its existence.</li>
+          <li><strong>Mobile first is strategic in education.</strong> It's not a technical decision — it's an access decision. Designing for mobile first is designing for inclusion.</li>
+          <li><strong>Collaboration with specialists increases quality exponentially.</strong> Working side by side with nurses transformed the simulation from "beautiful interface" into "real learning tool."</li>
+          <li><strong>A well-defined MVP accelerates impact.</strong> Starting with the CME allowed delivering real value in 3 months and validating the model before scaling.</li>
+          <li><strong>Financial impact opens doors.</strong> When design generates R$2M+ in savings, the conversation about UX investment changes completely.</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="lift-cta container reveal">
+      <h2>Designing experiences that deliver real impact — for the business and the user.</h2>
+      <p>If you need to turn constraints into opportunities and deliver products with measurable impact, let's talk.</p>
+      <a href="index.html#contact" class="btn-hero-primary">Get in touch <span>→</span></a>
+    </section>
+
+    <!-- ====================== NEXT ====================== -->
+    <section class="case-next container reveal">
+      <p class="case-next-label">Next project</p>
+      <a href="case.html" class="case-next-link">New SAVA Home — Student Virtual Classroom <span>→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

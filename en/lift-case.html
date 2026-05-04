@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case — Lift 2.0 Design System | JP Gonçalves</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="../logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="../lift-case.html" class="lang-toggle" aria-label="Versão em português">PT</a>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page lift-case">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Back to projects</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder case-hero-lift">
+        <div class="case-hero-overlay">
+          <h2>Lift 2.0 — Scaling Design Systems for multiple brands</h2>
+          <p>How we structured a system capable of supporting different identities without losing consistency and speed.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value">↓ 70%</span>
+          <span class="metric-label">Inconsistency across products</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">3x</span>
+          <span class="metric-label">UI delivery speed</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">90%</span>
+          <span class="metric-label">DS adoption across teams</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">90%</span>
+          <span class="metric-label">CSAT on SAVA (first product)</span>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Design System</span>
+        <span>System Ops</span>
+        <span>Governance</span>
+        <span>Multi-brand</span>
+        <span>Figma</span>
+      </div>
+    </section>
+
+    <!-- ====================== BODY ====================== -->
+    <article class="case-body container">
+
+      <!-- CONTEXT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Context</div>
+        <h2>An educational group in accelerated digital expansion</h2>
+        <div class="lift-prose">
+          <p>YDUQS is one of the largest educational groups in Brazil. Under its umbrella operate brands with distinct identities and audiences — IBMEC, Estácio, among others — each with their own digital platforms, student portals, and internal tools.</p>
+          <p>With the post-pandemic digital acceleration, the number of products grew rapidly. But the design infrastructure didn't keep up: each team created their own components, defined their own colors, and made visual decisions in isolation. The result was predictable — inconsistency, rework, and slowness.</p>
+        </div>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Challenge</div>
+        <h2>The problem wasn't visual — it was organizational</h2>
+        <div class="lift-prose">
+          <p>Lift 1.0 existed as a set of UI Kits in Figma, but it didn't function as a real system. There were no shared tokens, no governance, and no alignment between what design defined and what the front-end implemented.</p>
+          <p>The real challenge went beyond beautiful components:</p>
+        </div>
+        <div class="lift-challenge-grid">
+          <div class="lift-challenge-card">
+            <h4>Multiple brands, one structure</h4>
+            <p>IBMEC and Estácio have completely different visual identities, but they need to share the same component base to enable scale.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Misalignment between teams</h4>
+            <p>Designers made visual decisions without a common reference. Developers implemented variations that diverged from Figma. Nobody knew which was the "correct version."</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Technical limitations</h4>
+            <p>Existing components were coupled to specific contexts — impossible to reuse an IBMEC button in Estácio without rewriting code.</p>
+          </div>
+          <div class="lift-challenge-card">
+            <h4>Standardize without constraining</h4>
+            <p>The system needed to ensure consistency without removing team autonomy. Too many rules kill speed; too few rules create chaos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEM WITH IMPACT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Problem</div>
+        <h2>Every failure had a real consequence</h2>
+        <ul class="case-list lift-problem-list">
+          <li><strong>Poorly structured tokens</strong> generated constant rework — every new project reinvented colors and spacing from scratch.</li>
+          <li><strong>Low standardization across brands</strong> meant the same feature looked different across products within the same group.</li>
+          <li><strong>Coupled components</strong> prevented reuse — a form built for IBMEC didn't work for Estácio.</li>
+          <li><strong>Lack of governance</strong> meant nobody knew who maintained what, leading to duplication and conflicting decisions.</li>
+          <li><strong>Gap between design and code</strong> created an endless revision cycle — Figma said one thing, the front-end delivered another.</li>
+        </ul>
+      </section>
+
+      <!-- KEY DECISIONS -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Key decisions</div>
+        <h2>Three bets that defined the project</h2>
+        <div class="lift-decisions">
+          <div class="lift-decision">
+            <div class="lift-decision-num">01</div>
+            <div>
+              <h4>Separate brand and usage tokens</h4>
+              <p><strong>What:</strong> Create distinct layers for visual identity (brand) and application (semantic/usage).</p>
+              <p><strong>Why:</strong> Allow the same component to serve multiple brands without duplication. Theme switching becomes a variable swap, not a component swap.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">02</div>
+            <div>
+              <h4>Create abstraction layers</h4>
+              <p><strong>What:</strong> Architecture in 4 levels — Core → Brand → Semantic → Component.</p>
+              <p><strong>Why:</strong> Decouple identity from application. Each layer has a clear responsibility, reducing maintenance complexity.</p>
+            </div>
+          </div>
+          <div class="lift-decision">
+            <div class="lift-decision-num">03</div>
+            <div>
+              <h4>Prioritize governance before expansion</h4>
+              <p><strong>What:</strong> Establish contribution, review, and versioning processes before scaling the number of components.</p>
+              <p><strong>Why:</strong> A system without governance scales problems, not solutions. We needed clear rules before growing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRADE-OFFS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Trade-offs</div>
+        <h2>What we accepted to get there</h2>
+        <div class="lift-prose">
+          <p>No design system decision is free. Every choice involves a cost — and recognizing that is part of the process maturity.</p>
+        </div>
+        <div class="lift-tradeoffs">
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">We increased the initial complexity of the token architecture</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">To gain real long-term scalability</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">We prioritized consistency even with initial speed impact</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">To eliminate recurring rework across teams</div>
+          </div>
+          <div class="lift-tradeoff">
+            <div class="lift-tradeoff-gave">We invested time in governance before creating new components</div>
+            <div class="lift-tradeoff-arrow">→</div>
+            <div class="lift-tradeoff-got">To ensure growth was sustainable</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARCHITECTURE -->
+      <section class="case-section lift-section-wide reveal">
+        <div class="case-section-label">Architecture</div>
+        <h2>Four layers, one responsibility each</h2>
+        <p class="lift-arch-intro">The layer separation is what allows swapping an entire brand's visual identity without breaking a single component.</p>
+
+        <div class="lift-arch-visual">
+          <div class="lift-arch-block lift-arch-core">
+            <span class="lift-arch-tag">01 — Core</span>
+            <h4>Primitives</h4>
+            <p>Absolute values: color palette, typographic scale, spacing grid. The system's immutable foundation.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block lift-arch-brand">
+            <span class="lift-arch-tag">02 — Brand</span>
+            <h4>Identity</h4>
+            <p>Mapping primitives to each brand. IBMEC uses one set, Estácio uses another — same structure, different values.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block lift-arch-semantic">
+            <span class="lift-arch-tag">03 — Semantic</span>
+            <h4>Intent</h4>
+            <p>Contextual usage tokens: background-surface, text-primary, border-subtle. They map intent, not value.</p>
+          </div>
+          <div class="lift-arch-connector">↓</div>
+          <div class="lift-arch-block lift-arch-component">
+            <span class="lift-arch-tag">04 — Component</span>
+            <h4>Interface</h4>
+            <p>Reusable components that consume semantic tokens. Brand-agnostic — one button serves all products.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXECUTION -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Execution</div>
+        <h2>What was built</h2>
+        <div class="lift-exec-grid">
+          <div class="lift-exec-card">
+            <h4>Token Structure</h4>
+            <p>4-layer token hierarchy with Figma variables synced to CSS custom properties. Each brand has its own set of brand tokens.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Component System</h4>
+            <p>Component library with complete states, documented variants, and a consistent API. Built to consume semantic tokens, not fixed values.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Multi-brand Engine</h4>
+            <p>Native multi-brand support via brand tokens. Switching the theme from IBMEC to Estácio means swapping a variables file — zero component changes.</p>
+          </div>
+          <div class="lift-exec-card">
+            <h4>Living Documentation</h4>
+            <p>Living documentation with usage guidelines, contribution patterns, versioned changelog, and interactive examples for designers and developers.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT IMPACT -->
+      <section class="case-section lift-section-featured reveal">
+        <div class="case-section-label">Impact</div>
+        <h2>Product results</h2>
+        <div class="lift-impact-grid">
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">3x</span>
+            <span class="lift-impact-label">Faster to create new interfaces</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">-70%</span>
+            <span class="lift-impact-label">Component rework across brands</span>
+          </div>
+          <div class="lift-impact-card">
+            <span class="lift-impact-value">90%</span>
+            <span class="lift-impact-label">Cross-product visual consistency</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORGANIZATIONAL IMPACT -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Team impact</div>
+        <h2>What changed in how we work</h2>
+        <div class="lift-org-grid">
+          <div class="lift-org-item">
+            <h4>More autonomous designers</h4>
+            <p>With well-defined tokens and components, designers started making decisions with confidence — without needing to validate every visual choice with leadership.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Fewer manual decisions</h4>
+            <p>The system absorbed repetitive decisions (colors, spacing, states). The team shifted focus to product problems, not UI details.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Delivery predictability</h4>
+            <p>With ready and documented components, effort estimation became more accurate. Fewer surprises in the design → development handoff.</p>
+          </div>
+          <div class="lift-org-item">
+            <h4>Design ↔ code alignment</h4>
+            <p>Figma variables mapped 1:1 with CSS custom properties. What the designer sees is what the developer implements — no manual translation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEFORE VS AFTER -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Before vs After</div>
+        <h2>The transformation</h2>
+        <div class="lift-compare">
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-before">Before — Lift 1.0</div>
+            <ul class="lift-compare-list">
+              <li>Isolated UI Kits per brand</li>
+              <li>Undocumented tokens</li>
+              <li>Duplicated and coupled components</li>
+              <li>Informal governance</li>
+              <li>Constant gap between design and code</li>
+              <li>Every project reinvented patterns</li>
+            </ul>
+          </div>
+          <div class="lift-compare-col">
+            <div class="lift-compare-label lift-compare-after">After — Lift 2.0</div>
+            <ul class="lift-compare-list">
+              <li>Unified multi-brand system</li>
+              <li>Tokens in 4 documented layers</li>
+              <li>Agnostic and reusable components</li>
+              <li>Governance with clear processes</li>
+              <li>Figma ↔ CSS variables synced</li>
+              <li>New products inherit the system</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY TAKEAWAYS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Key takeaways</div>
+        <h2>What this project taught me</h2>
+        <ul class="case-list">
+          <li><strong>A Design System is an organizational problem, not just a visual one.</strong> The hardest part isn't creating components — it's changing how teams work together.</li>
+          <li><strong>Governance is what separates a UI kit from a real system.</strong> Without clear contribution and review processes, the system degrades over time.</li>
+          <li><strong>Layer separation reduces long-term complexity.</strong> The initial investment in architecture pays off exponentially when new brands join the ecosystem.</li>
+          <li><strong>Accessible documentation accelerates adoption more than formal training.</strong> Teams adopt what they can understand on their own.</li>
+          <li><strong>A Design System is a product — it needs a roadmap, metrics, and continuous iteration.</strong> It's not a project with an end date.</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="lift-cta container reveal">
+      <h2>Let's build systems that scale?</h2>
+      <p>If you need a Design System that truly works across multiple products and brands, let's talk.</p>
+      <a href="index.html#contact" class="btn-hero-primary">Get in touch <span>→</span></a>
+    </section>
+
+    <!-- ====================== NEXT ====================== -->
+    <section class="case-next container reveal">
+      <p class="case-next-label">Next project</p>
+      <a href="lxd-creator.html" class="case-next-link">LXD Creator — Visual authoring tool <span>→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
