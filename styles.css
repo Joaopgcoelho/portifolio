@@ -114,12 +114,12 @@ nav a:hover{color:var(--text);background:none}
 }
 
 .hero-col-left{
-  max-width:620px;
+  max-width:520px;
 }
 
 .hero-headline{
-  font-size:clamp(36px,4.5vw,64px);
-  line-height:1.1;
+  font-size:clamp(36px,4.2vw,56px);
+  line-height:1.12;
   font-weight:500;
   letter-spacing:-0.035em;
   color:var(--text);
@@ -153,7 +153,7 @@ nav a:hover{color:var(--text);background:none}
   position:absolute;
   top:0;
   right:0;
-  width:50%;
+  width:45%;
   height:100%;
   z-index:1;
   overflow:hidden;
@@ -240,10 +240,10 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 /* ============================================
    SECTION SHARED
    ============================================ */
-.section-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:var(--s32);border-bottom:1px solid var(--border);margin-bottom:var(--s8)}
+.section-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:var(--s40);border-bottom:1px solid var(--border);margin-bottom:var(--s16)}
 .section-id{display:flex;align-items:center;gap:var(--s16)}
-.num{color:var(--muted);font-size:13px;font-weight:480;font-variant-numeric:tabular-nums}
-.section-id h2{font-size:12px;font-weight:560;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-2)}
+.num{color:var(--muted);font-size:12px;font-weight:500;font-variant-numeric:tabular-nums}
+.section-id h2{font-size:11px;font-weight:580;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
 .section-link{font-size:13px;color:var(--muted);transition:color var(--tb) var(--ease)}
 .section-link:hover{color:var(--accent)}
 
@@ -1161,8 +1161,8 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:var(--s48);
-  padding:var(--s56) 0;
+  gap:var(--s64);
+  padding:var(--s80) 0;
   border-bottom:1px solid var(--border);
 }
 
@@ -1170,34 +1170,34 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:var(--s4);
+  gap:var(--s8);
   text-align:center;
 }
 
 .proof-value{
-  font-size:22px;
-  font-weight:620;
+  font-size:24px;
+  font-weight:640;
   color:var(--text);
-  letter-spacing:-0.025em;
+  letter-spacing:-0.03em;
 }
 
 .proof-label{
-  font-size:12px;
+  font-size:13px;
   color:var(--muted);
-  font-weight:420;
-  letter-spacing:0.01em;
+  font-weight:400;
+  letter-spacing:0.005em;
 }
 
 .proof-divider{
   width:1px;
-  height:40px;
+  height:48px;
   background:var(--border);
 }
 
 /* Projects section */
 .home-projects{
-  padding-top:var(--s120);
-  padding-bottom:var(--s64);
+  padding-top:var(--s160);
+  padding-bottom:var(--s80);
 }
 
 .home-project-list{
@@ -1211,11 +1211,11 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
   display:flex;
   align-items:flex-start;
   gap:var(--s24);
-  padding:var(--s40) 0;
+  padding:var(--s48) 0;
   border-bottom:1px solid var(--border);
   color:inherit;
   text-decoration:none;
-  transition:transform var(--tb) var(--ease);
+  transition:transform 200ms ease, box-shadow 200ms ease;
 }
 
 .home-project-card:first-child{
@@ -1223,7 +1223,8 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 }
 
 .home-project-card:hover{
-  transform:translateX(6px);
+  transform:translateY(-4px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.08);
 }
 
 .home-project-num{
@@ -1245,18 +1246,18 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 .home-project-tag{
   display:inline-block;
   font-size:11px;
-  font-weight:600;
-  letter-spacing:0.06em;
+  font-weight:500;
+  letter-spacing:0.08em;
   text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:var(--s12);
+  color:var(--muted);
+  margin-bottom:var(--s16);
 }
 
 .home-project-card h3{
-  font-size:clamp(22px,2.8vw,28px);
-  font-weight:560;
-  letter-spacing:-0.028em;
-  line-height:1.2;
+  font-size:clamp(22px,2.5vw,26px);
+  font-weight:540;
+  letter-spacing:-0.025em;
+  line-height:1.3;
   margin-bottom:var(--s12);
   transition:color var(--tb) var(--ease);
 }
@@ -1268,9 +1269,9 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 .home-project-card p{
   color:var(--muted);
   font-size:15px;
-  line-height:1.65;
-  max-width:580px;
-  margin-bottom:var(--s16);
+  line-height:1.7;
+  max-width:560px;
+  margin-bottom:var(--s20);
 }
 
 .home-project-link{
@@ -1289,12 +1290,12 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 
 /* Approach section */
 .home-approach{
-  padding-top:var(--s120);
-  padding-bottom:var(--s64);
+  padding-top:var(--s160);
+  padding-bottom:var(--s80);
 }
 
 .home-approach > .section-id{
-  margin-bottom:var(--s48);
+  margin-bottom:var(--s56);
 }
 
 .approach-grid{
@@ -1333,9 +1334,9 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 .home-ds{
   display:flex;
   align-items:flex-start;
-  gap:var(--s64);
-  padding-top:var(--s120);
-  padding-bottom:var(--s48);
+  gap:var(--s80);
+  padding-top:var(--s160);
+  padding-bottom:var(--s64);
 }
 
 .home-ds-content{
@@ -1369,8 +1370,8 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 
 /* About section */
 .home-about{
-  padding-top:var(--s120);
-  padding-bottom:var(--s48);
+  padding-top:var(--s160);
+  padding-bottom:var(--s64);
 }
 
 .home-about > .section-id{
@@ -1619,21 +1620,21 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 /* Hero eyebrow */
 .hero-eyebrow{
   font-size:11px;
-  font-weight:520;
-  letter-spacing:0.1em;
-  color:var(--accent);
-  margin-bottom:var(--s24);
+  font-weight:480;
+  letter-spacing:0.12em;
+  color:var(--muted);
+  margin-bottom:var(--s32);
   text-transform:uppercase;
 }
 
 /* Before vs After section */
 .home-bva{
-  padding-top:var(--s120);
-  padding-bottom:var(--s64);
+  padding-top:var(--s160);
+  padding-bottom:var(--s80);
 }
 
 .home-bva > .section-id{
-  margin-bottom:var(--s48);
+  margin-bottom:var(--s56);
 }
 
 .home-bva-grid{
