@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CubiCare — Construção e Evolução de Produto | JP Gonçalves</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="JP" class="logo-img" width="28" height="28" />
+        <span class="logo-text">JP Gonçalves</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case-page">
+
+    <!-- COVER -->
+    <section class="case-cover container">
+      <a href="index.html#projects" class="back-link anim-fade" data-delay="1">← Voltar aos projetos</a>
+    </section>
+
+    <div class="case-hero-image anim-fade" data-delay="2">
+      <div class="case-hero-placeholder" style="background: linear-gradient(135deg, #4a9e7e 0%, #3d8268 100%);">
+        <div class="case-hero-overlay">
+          <h2>CubiCare — Simplificando a rotina alimentar infantil</h2>
+          <p>Como criei um produto para organizar refeições de crianças e transformar um processo complexo em algo simples e previsível.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="case-cover-metrics container">
+      <div class="case-metrics anim-fade" data-delay="4">
+        <div class="metric">
+          <span class="metric-value">Menor</span>
+          <span class="metric-label">Carga mental dos pais</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">Maior</span>
+          <span class="metric-label">Previsibilidade das refeições</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">Melhor</span>
+          <span class="metric-label">Organização alimentar</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">10s</span>
+          <span class="metric-label">Para registrar uma refeição</span>
+        </div>
+      </div>
+
+      <div class="case-tags anim-fade" data-delay="5">
+        <span>Product Design</span><span>UX Design</span><span>Mobile First</span><span>Projeto Pessoal</span>
+      </div>
+    </section>
+
+    <!-- CASE BODY -->
+    <article class="case-body container">
+
+      <!-- CONTEXTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Contexto</div>
+        <h2>O desafio da alimentação infantil</h2>
+        <p>Quando um bebê começa a introdução alimentar, os pais enfrentam uma rotina exaustiva: preparar refeições variadas todos os dias, garantir equilíbrio nutricional entre grupos alimentares, e manter controle do que está disponível no freezer.</p>
+        <p>A técnica de batch cooking com cubos congelados resolve parte do problema — você cozinha em lote e congela em porções de 25ml. Mas organizar mentalmente o que tem pronto, o que está acabando, e o que precisa produzir continua sendo uma carga cognitiva alta.</p>
+      </section>
+
+      <!-- PROBLEMA -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Problema</div>
+        <h2>Rotina imprevisível e esforço constante</h2>
+        <ul class="case-list">
+          <li>Pais não sabem quantas refeições completas têm prontas</li>
+          <li>Descobrem que falta algo na hora de montar o prato</li>
+          <li>Não há visibilidade sobre o equilíbrio entre grupos nutricionais</li>
+          <li>O planejamento de produção é mental — fácil de esquecer</li>
+          <li>Cada refeição exige decisão: "o que combinar hoje?"</li>
+        </ul>
+      </section>
+
+      <!-- INSIGHT -->
+      <section class="case-section reveal">
+        <div class="case-highlight">
+          <p>"O problema não era cozinhar — era organizar. Os pais já sabiam preparar os alimentos. O que faltava era visibilidade e previsibilidade sobre o que estava disponível."</p>
+        </div>
+      </section>
+
+      <!-- CONCEPÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Concepção</div>
+        <h2>A ideia: cubos como unidade de valor</h2>
+        <p>O insight central foi tratar cada cubo congelado como uma unidade atômica do sistema. Se você tem cubos suficientes de cada grupo nutricional, tem refeições completas. Se algum grupo acaba, o sistema avisa.</p>
+        <p>A partir disso, defini a estrutura do produto:</p>
+        <ul class="case-list">
+          <li><strong>5 grupos nutricionais</strong> — proteína, leguminosa, vegetal A, vegetal B, carboidrato</li>
+          <li><strong>Estoque em cubos</strong> — cada grupo tem uma meta (ex: 30 cubos)</li>
+          <li><strong>Refeição = 1 cubo de cada grupo</strong> — montagem automática</li>
+          <li><strong>Ciclo claro</strong> — Comprar → Produzir → Estocar → Montar Refeição</li>
+        </ul>
+      </section>
+
+      <!-- SOLUÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Solução</div>
+        <h2>App mobile-first para controle alimentar</h2>
+        <p>Criei um app PWA com React + TypeScript focado em resolver o problema com o mínimo de fricção possível. As decisões de produto foram:</p>
+        <ul class="case-list">
+          <li><strong>Mobile-first</strong> — usado na cozinha, com bebê no colo</li>
+          <li><strong>Estoque como dashboard</strong> — a home responde "quantas refeições tenho?"</li>
+          <li><strong>Produção guiada</strong> — o app diz o que produzir, não o contrário</li>
+          <li><strong>Registro em 1 toque</strong> — sugestão de refeição + botão de confirmar</li>
+          <li><strong>Lanches separados</strong> — café e lanche são itens únicos (fruta, iogurte), não refeições completas</li>
+        </ul>
+      </section>
+
+      <!-- FLUXO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Experiência</div>
+        <h2>O fluxo principal</h2>
+        <p>O produto foi estruturado em torno de um ciclo que se repete semanalmente:</p>
+        <div class="case-images">
+          <div class="case-img-placeholder wide">
+            <span>Comprar → Produzir (batch cooking) → Estocar cubos → Montar refeições → Repetir</span>
+          </div>
+        </div>
+        <p>Cada etapa do ciclo tem uma tela dedicada no app. O Dashboard conecta tudo mostrando o estado atual e a próxima ação necessária.</p>
+      </section>
+
+      <!-- DECISÕES -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Decisões</div>
+        <h2>Escolhas de produto</h2>
+        <div class="case-metrics-inline">
+          <div class="metric-card">
+            <span class="metric-value">Mobile-first</span>
+            <span class="metric-label">Usado na cozinha, com uma mão livre</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">Ciclos</span>
+            <span class="metric-label">Produção → Consumo como modelo mental</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">Refeições</span>
+            <span class="metric-label">Estoque traduzido em valor real</span>
+          </div>
+        </div>
+        <p style="margin-top: 2rem;">A decisão mais importante foi transformar "cubos em estoque" em "refeições disponíveis". O pai não pensa em cubos — pensa em "quantos dias estou coberto". Essa tradução é o core do produto.</p>
+      </section>
+
+      <!-- V1 -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Primeira versão</div>
+        <h2>MVP funcional</h2>
+        <p>A primeira versão entregou as funcionalidades essenciais:</p>
+        <ul class="case-list">
+          <li>Dashboard com contagem de refeições e status por grupo</li>
+          <li>Estoque com adição/remoção de cubos por grupo</li>
+          <li>Registro de refeições com desconto automático do estoque</li>
+          <li>Sugestões de produção baseadas no que está baixo</li>
+          <li>Lista de compras gerada automaticamente</li>
+        </ul>
+        <p>O produto funcionava. Mas usar no dia a dia revelou problemas que não eram visíveis no design.</p>
+      </section>
+
+      <!-- APRENDIZADOS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Aprendizados</div>
+        <h2>O que o uso real revelou</h2>
+        <ul class="case-list">
+          <li><strong>O conceito não era óbvio</strong> — novos usuários não entendiam "cubos" sem explicação</li>
+          <li><strong>Excesso de informação na home</strong> — 6 barras de progresso + alertas + frutas = ruído</li>
+          <li><strong>Falta de direção</strong> — o app mostrava dados mas não dizia o que fazer</li>
+          <li><strong>Registro de refeição era pesado</strong> — 6 selects em um modal para montar um prato</li>
+          <li><strong>Frutas tinham lógica separada</strong> — um calendário semanal que não fazia sentido no fluxo</li>
+          <li><strong>Visual corporativo</strong> — azul frio e glass morphism não combinavam com "cuidar do bebê"</li>
+        </ul>
+      </section>
+
+      <!-- EVOLUÇÃO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Evolução</div>
+        <h2>Refinamento baseado em uso</h2>
+        <p>Com base nos aprendizados, fiz uma evolução completa do produto mantendo a lógica de negócio intacta:</p>
+        <ul class="case-list">
+          <li><strong>Onboarding</strong> — 3 telas que explicam o conceito de cubos antes de usar</li>
+          <li><strong>Dashboard contextual</strong> — muda baseado no horário (café, almoço, lanche, jantar)</li>
+          <li><strong>One-tap meal</strong> — registrar refeição com 1 toque direto da home</li>
+          <li><strong>Quick Snack</strong> — bottom sheet para registrar café/lanche (banana, iogurte, panquequinha)</li>
+          <li><strong>Status emocional</strong> — "🟢 Semana tranquila" ao invés de 6 barras de progresso</li>
+          <li><strong>Paleta quente</strong> — verde-sage + creme, emojis nos grupos, tom acolhedor</li>
+          <li><strong>Navegação simplificada</strong> — 6 itens → 5, com FAB para ações rápidas</li>
+        </ul>
+      </section>
+
+      <!-- ANTES VS DEPOIS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Transformação</div>
+        <h2>Antes e depois</h2>
+        <div class="case-metrics-inline">
+          <div class="metric-card">
+            <span class="metric-value">Antes</span>
+            <span class="metric-label">Experiência confusa, alta carga cognitiva, sem direção clara</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">Depois</span>
+            <span class="metric-label">Fluxo guiado, decisões claras, experiência leve</span>
+          </div>
+        </div>
+        <div class="case-highlight" style="margin-top: 2rem;">
+          <p>"O app deixou de mostrar dados e passou a guiar ações. A pergunta mudou de 'o que esses números significam?' para 'ok, o que faço agora?' — e a resposta está sempre visível."</p>
+        </div>
+      </section>
+
+      <!-- DESIGN SYSTEM -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Sistema</div>
+        <h2>Design System enxuto</h2>
+        <p>Reduzi de 49 componentes UI para 12. Padronizei cores, espaçamentos e border-radius. Criei componentes reutilizáveis (EmptyState, PageHeader, QuickSnack) que garantem consistência sem overhead.</p>
+        <ul class="case-list">
+          <li>Paleta semântica: primary (sage), warning (amber), danger (warm red)</li>
+          <li>Tipografia: Inter, escala de 11px a 34px</li>
+          <li>Espaçamento: sistema de 4px (4, 8, 12, 16, 24, 32)</li>
+          <li>Componentes: Button, Card (.glass), Progress, AlertBanner, EmptyState, Dialog</li>
+          <li>Emojis como identidade visual dos grupos nutricionais</li>
+        </ul>
+      </section>
+
+      <!-- IMPACTO -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Impacto</div>
+        <h2>Resultado</h2>
+        <div class="case-metrics-inline">
+          <div class="metric-card">
+            <span class="metric-value">1 toque</span>
+            <span class="metric-label">Para registrar uma refeição completa</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">-38%</span>
+            <span class="metric-label">CSS bundle (138KB → 86KB)</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">12</span>
+            <span class="metric-label">Componentes (eram 49)</span>
+          </div>
+        </div>
+        <p style="margin-top: 2rem;">O produto se tornou mais compreensível, mais rápido de usar, e mais agradável visualmente. A experiência passou de "dashboard de dados" para "assistente de rotina".</p>
+      </section>
+
+      <!-- APRENDIZADOS FINAIS -->
+      <section class="case-section reveal">
+        <div class="case-section-label">Reflexões</div>
+        <h2>O que aprendi</h2>
+        <ul class="case-list">
+          <li><strong>Criar produto é diferente de torná-lo utilizável</strong> — funcionar não é suficiente, precisa ser claro</li>
+          <li><strong>Clareza é a feature mais importante</strong> — se o usuário não entende em 5 segundos, o design falhou</li>
+          <li><strong>UX é direcionar comportamento</strong> — não mostrar dados, mas guiar a próxima ação</li>
+          <li><strong>Contexto temporal importa</strong> — o que o app mostra às 7h deve ser diferente das 19h</li>
+          <li><strong>Evolução contínua faz parte do produto</strong> — a v1 é hipótese, o uso real é validação</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <!-- CTA -->
+    <section class="case-next container reveal">
+      <div class="case-highlight" style="text-align: center; max-width: 500px; margin: 0 auto;">
+        <p>"Criando produtos que simplificam rotinas complexas."</p>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://www.linkedin.com/in/jpgoncalvesc/" target="_blank" rel="noopener" class="btn-hero-primary">Entrar em contato <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- OUTROS PROJETOS -->
+    <section class="home-projects container reveal" style="padding-top: 4rem;">
+      <div class="section-head">
+        <div class="section-id"><h2>OUTROS PROJETOS</h2></div>
+      </div>
+      <div class="home-project-list">
+        <a href="lab-virtual.html" class="home-project-card reveal">
+          <div class="home-project-num">01</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">Laboratório Virtual · EdTech · Mobile First</span>
+            <h3>Eliminamos R$2M/ano em custos criando um laboratório virtual do zero</h3>
+            <span class="home-project-link">Ler case →</span>
+          </div>
+        </a>
+        <a href="lxd-creator.html" class="home-project-card reveal">
+          <div class="home-project-num">02</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">LXD Creator · Product Design · CMS</span>
+            <h3>De 3 ferramentas desconectadas para 1 fluxo — produtividade 2.5x maior</h3>
+            <span class="home-project-link">Ler case →</span>
+          </div>
+        </a>
+        <a href="lift-case.html" class="home-project-card reveal">
+          <div class="home-project-num">03</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">Lift 2.0 · Design System · Governance</span>
+            <h3>Design System multi-marca com 90% de adoção e zero duplicação</h3>
+            <span class="home-project-link">Ler case →</span>
+          </div>
+        </a>
+        <a href="case.html" class="home-project-card reveal">
+          <div class="home-project-num">04</div>
+          <div class="home-project-content">
+            <span class="home-project-tag">SAVA · Product Design · EdTech</span>
+            <h3>Nova Home da Sala Virtual do Aluno — 90% CSAT</h3>
+            <span class="home-project-link">Ler case →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2024 João Paulo Gonçalves. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

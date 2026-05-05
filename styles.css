@@ -105,8 +105,8 @@ nav a:hover{color:var(--text);background:none}
   flex-direction:column;
   justify-content:center;
   min-height:100vh;
-  padding-top:120px;
-  padding-bottom:var(--s80);
+  padding-top:80px;
+  padding-bottom:var(--s48);
   max-width:1200px;
   margin:0 auto;
   padding-left:var(--s80);
@@ -114,16 +114,16 @@ nav a:hover{color:var(--text);background:none}
 }
 
 .hero-col-left{
-  max-width:520px;
+  max-width:620px;
 }
 
 .hero-headline{
-  font-size:clamp(44px,6vw,76px);
-  line-height:1.06;
+  font-size:clamp(36px,4.5vw,64px);
+  line-height:1.1;
   font-weight:500;
   letter-spacing:-0.035em;
   color:var(--text);
-  margin:0 0 var(--s40) 0;
+  margin:0 0 var(--s24) 0;
 }
 
 .hero-accent{
@@ -1144,10 +1144,10 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 /* Hero subtitle */
 .hero-sub{
   color:var(--muted);
-  font-size:17px;
-  line-height:1.65;
+  font-size:16px;
+  line-height:1.6;
   max-width:440px;
-  margin-bottom:var(--s40);
+  margin-bottom:var(--s24);
   font-weight:400;
 }
 
