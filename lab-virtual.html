@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case — Laboratório Virtual | JP Gonçalves</title>
   <link rel="stylesheet" href="styles.css" />
-  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light')</script>
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark')</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -51,10 +51,6 @@
 
     <div class="case-hero-image anim-fade" data-delay="2">
       <div class="case-hero-placeholder case-hero-lab">
-        <div class="case-hero-overlay">
-          <h2>Laboratório Virtual — Escalando ensino prático com redução de custos</h2>
-          <p>Como criamos uma experiência imersiva para ensino remoto de enfermagem, reduzindo mais de R$2 milhões em custos operacionais.</p>
-        </div>
       </div>
     </div>
 
@@ -90,13 +86,13 @@
     <!-- ====================== BODY ====================== -->
     <article class="case-body container">
 
-      <!-- VÍDEO PROTAGONISTA -->
-      <section class="case-section reveal" style="border-bottom:none;padding-bottom:0">
-        <div class="case-video">
+      <!-- VÍDEO HERO -->
+      <section class="case-section reveal" style="border-bottom:none;padding:var(--s32) 0 var(--s64)">
+        <div class="case-video case-video-hero">
           <div class="case-video-wrapper">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pSTytQiSWE4?si=LqTmh8OaCZkG0s0u&rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pSTytQiSWE4?si=LqTmh8OaCZkG0s0u&rel=0&autoplay=1&mute=1&loop=1&playlist=pSTytQiSWE4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <p class="case-video-caption">Demonstração da simulação prática — Central de Material Esterilizado (CME)</p>
+          <p class="case-video-caption">Simulação prática — Central de Material Esterilizado (CME)</p>
         </div>
       </section>
 
@@ -113,10 +109,10 @@
       </section>
 
       <!-- INSIGHT -->
-      <section class="case-section reveal" style="border-bottom:none">
-        <div class="case-highlight" style="text-align:center;max-width:600px;margin:0 auto;padding:var(--s48) var(--s24)">
+      <section class="case-section reveal" style="border-bottom:none;padding:var(--s80) 0">
+        <div style="text-align:center;max-width:560px;margin:0 auto">
           <div class="case-section-label" style="text-align:center">Insight</div>
-          <p style="font-size:clamp(18px,2vw,22px);line-height:1.4;font-weight:480;color:var(--text)">"O problema não era ensinar melhor — era permitir prática sem depender do físico."</p>
+          <p style="font-size:clamp(20px,2.2vw,26px);line-height:1.35;font-weight:460;color:var(--text);margin-top:var(--s16)">"O problema não era ensinar melhor —<br>era permitir prática sem depender do físico."</p>
         </div>
       </section>
 
@@ -125,21 +121,21 @@
         <div class="case-section-label">Decisões</div>
         <h2>4 apostas que definiram o produto</h2>
         <div class="lift-challenge-grid">
-          <div class="lift-challenge-card">
+          <div class="lift-challenge-card lab-decision-card">
             <h4>📱 Mobile first</h4>
-            <p>Projetar para celular como primário — 70%+ dos alunos acessam assim.</p>
+            <p>70%+ dos alunos acessam pelo celular</p>
           </div>
-          <div class="lift-challenge-card">
+          <div class="lift-challenge-card lab-decision-card">
             <h4>⚡ Escopo reduzido</h4>
-            <p>Apenas CME de enfermagem. Validar o modelo antes de escalar.</p>
+            <p>Apenas CME — validar antes de escalar</p>
           </div>
-          <div class="lift-challenge-card">
+          <div class="lift-challenge-card lab-decision-card">
             <h4>🧠 Simulação funcional</h4>
-            <p>Procedimentos corretos + feedback claro > gráficos 3D impressionantes.</p>
+            <p>Feedback claro > gráficos 3D</p>
           </div>
-          <div class="lift-challenge-card">
+          <div class="lift-challenge-card lab-decision-card">
             <h4>🎯 Integração com DS</h4>
-            <p>Menos tempo em UI, mais tempo em experiência de aprendizado.</p>
+            <p>Menos UI, mais experiência</p>
           </div>
         </div>
       </section>
@@ -164,21 +160,31 @@
         </div>
       </section>
 
-      <!-- IMPACTO DRAMÁTICO -->
-      <section class="case-section reveal" style="text-align:center;padding:var(--s96) 0">
-        <div class="case-section-label" style="text-align:center">Impacto</div>
-        <div style="margin-bottom:var(--s48)">
-          <span style="display:block;font-size:clamp(48px,6vw,72px);font-weight:700;letter-spacing:-0.04em;color:var(--accent);line-height:1">-R$2M+</span>
-          <span style="display:block;font-size:16px;color:var(--muted);margin-top:var(--s12)">economizados por ano</span>
+      <!-- ATUAÇÃO -->
+      <section class="case-section reveal" style="border-bottom:none;padding:var(--s48) 0">
+        <div style="display:flex;align-items:center;gap:var(--s16);padding:var(--s20) var(--s24);background:var(--bg-raised);border:1px solid var(--border);border-radius:var(--r12)">
+          <span style="font-size:11px;font-weight:560;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent)">Meu papel</span>
+          <span style="width:1px;height:20px;background:var(--border)"></span>
+          <span style="font-size:14px;color:var(--text-2)">Product Designer — discovery à entrega (UX, UI, estratégia de produto)</span>
         </div>
-        <div style="display:flex;justify-content:center;gap:var(--s64);flex-wrap:wrap">
+      </section>
+
+      <!-- IMPACTO -->
+      <section class="case-section reveal" style="text-align:center;padding:var(--s120) 0;border-bottom:none">
+        <div class="case-section-label" style="text-align:center">Impacto</div>
+        <div style="margin:var(--s32) 0 var(--s56)">
+          <span style="display:block;font-size:clamp(56px,7vw,80px);font-weight:720;letter-spacing:-0.045em;color:var(--accent);line-height:1">-R$2M+</span>
+          <span style="display:block;font-size:17px;color:var(--text-2);margin-top:var(--s16);font-weight:440">economizados por ano</span>
+          <span style="display:block;font-size:13px;color:var(--muted);margin-top:var(--s8);opacity:0.7">em apenas 3 meses de projeto</span>
+        </div>
+        <div style="display:flex;justify-content:center;gap:var(--s80);flex-wrap:wrap">
           <div>
-            <span style="display:block;font-size:32px;font-weight:640;color:var(--text);letter-spacing:-0.02em">3 meses</span>
-            <span style="display:block;font-size:13px;color:var(--muted);margin-top:4px">do zero à produção</span>
+            <span style="display:block;font-size:36px;font-weight:660;color:var(--text);letter-spacing:-0.03em">3 meses</span>
+            <span style="display:block;font-size:13px;color:var(--muted);margin-top:6px">do zero à produção</span>
           </div>
           <div>
-            <span style="display:block;font-size:32px;font-weight:640;color:var(--text);letter-spacing:-0.02em">100%</span>
-            <span style="display:block;font-size:13px;color:var(--muted);margin-top:4px">acesso remoto ao ensino prático</span>
+            <span style="display:block;font-size:36px;font-weight:660;color:var(--text);letter-spacing:-0.03em">100%</span>
+            <span style="display:block;font-size:13px;color:var(--muted);margin-top:6px">acesso remoto ao ensino prático</span>
           </div>
         </div>
       </section>
@@ -187,8 +193,8 @@
       <section class="case-section lift-section-featured reveal">
         <div class="case-section-label">Transformação</div>
         <h2>Antes e depois</h2>
-        <div class="lift-compare">
-          <div class="lift-compare-col">
+        <div class="lift-compare" style="margin-top:var(--s32)">
+          <div class="lift-compare-col" style="padding:var(--s24) var(--s32);background:var(--bg-card);border-radius:var(--r12);border:1px solid var(--border)">
             <div class="lift-compare-label lift-compare-before">Antes</div>
             <ul class="lift-compare-list">
               <li>R$2M+/ano em fornecedor externo</li>
@@ -197,7 +203,7 @@
               <li>Zero escalabilidade</li>
             </ul>
           </div>
-          <div class="lift-compare-col">
+          <div class="lift-compare-col" style="padding:var(--s24) var(--s32);background:var(--bg-card);border-radius:var(--r12);border:1px solid var(--border)">
             <div class="lift-compare-label lift-compare-after">Depois</div>
             <ul class="lift-compare-list">
               <li>Solução interna com custo controlado</li>
@@ -225,9 +231,10 @@
     </article>
 
     <!-- ====================== CTA ====================== -->
-    <section class="lift-cta container reveal">
-      <p style="color:var(--muted);font-size:15px;margin-bottom:var(--s16)">Mesmo com restrições extremas, é possível gerar impacto real no negócio e transformar a experiência do usuário.</p>
-      <h2>Escala, eficiência e aprendizado real.</h2>
+    <section class="lift-cta container reveal" style="padding-top:var(--s160)">
+      <p style="color:var(--muted);font-size:16px;margin-bottom:var(--s12);font-weight:400">Projetar não é só resolver interface.</p>
+      <p style="color:var(--text-2);font-size:16px;margin-bottom:var(--s32);font-weight:400">É transformar restrições em impacto real.</p>
+      <h2 style="margin-bottom:var(--s40)">Esse projeto é prova disso.</h2>
       <a href="index.html#contact" class="btn-hero-primary">Entrar em contato <span>→</span></a>
     </section>
 
