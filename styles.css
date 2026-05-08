@@ -1868,3 +1868,137 @@ h1{font-size:clamp(32px,4.2vw,48px);line-height:1.1;font-weight:560;letter-spaci
 .case-img.wide{
   grid-column:1/-1;
 }
+
+/* ============================================
+   CONSULTORIA / SERVICES
+   ============================================ */
+.home-services{padding-top:var(--s120);padding-bottom:var(--s80)}
+.home-services .section-id{margin-bottom:var(--s16)}
+
+.services-intro{
+  color:var(--text-2);
+  font-size:15px;
+  line-height:1.7;
+  max-width:600px;
+  margin-bottom:var(--s48);
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:var(--s16);
+  margin-bottom:var(--s32);
+}
+
+.service-card{
+  background:var(--bg-raised);
+  border:1px solid var(--border);
+  border-radius:var(--r12);
+  padding:var(--s32) var(--s24);
+  transition:border-color var(--tb) var(--ease),transform var(--tb) var(--ease);
+}
+.service-card:hover{
+  border-color:var(--border-hover);
+  transform:translateY(-2px);
+}
+
+.service-icon{
+  font-size:16px;
+  color:var(--accent);
+  margin-bottom:var(--s16);
+  opacity:0.8;
+}
+
+.service-card h4{
+  font-size:15px;
+  font-weight:540;
+  letter-spacing:-0.01em;
+  margin-bottom:var(--s8);
+}
+
+.service-card p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+  margin:0;
+}
+
+.services-note{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+  max-width:520px;
+  padding-top:var(--s16);
+  border-top:1px solid var(--border);
+}
+
+/* ============================================
+   PROCESS NOTES
+   ============================================ */
+.home-notes{padding-top:var(--s120);padding-bottom:var(--s80)}
+.home-notes .section-id{margin-bottom:var(--s16)}
+
+.notes-intro{
+  color:var(--text-2);
+  font-size:15px;
+  line-height:1.7;
+  max-width:560px;
+  margin-bottom:var(--s48);
+}
+
+.notes-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:var(--s16);
+}
+
+.note-card{
+  background:var(--bg-raised);
+  border:1px solid var(--border);
+  border-radius:var(--r12);
+  padding:var(--s32) var(--s24);
+  transition:border-color var(--tb) var(--ease),transform var(--tb) var(--ease);
+}
+.note-card:hover{
+  border-color:var(--border-hover);
+  transform:translateY(-2px);
+}
+
+.note-tag{
+  display:inline-block;
+  font-size:10px;
+  font-weight:560;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:var(--accent-dim);
+  padding:3px 10px;
+  border-radius:var(--r-pill);
+  margin-bottom:var(--s16);
+}
+
+.note-card h4{
+  font-size:15px;
+  font-weight:540;
+  letter-spacing:-0.01em;
+  line-height:1.35;
+  margin-bottom:var(--s8);
+}
+
+.note-card p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+  margin:0;
+}
+
+/* Responsive — Services & Notes */
+@media(max-width:1024px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .notes-grid{grid-template-columns:1fr}
+}
+
+@media(max-width:768px){
+  .services-grid{grid-template-columns:1fr}
+  .home-services,.home-notes{padding-top:var(--s80)}
+}
