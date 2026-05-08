@@ -7,7 +7,9 @@ const themeToggle = document.querySelector('.theme-toggle');
 const root = document.documentElement;
 
 function getStoredTheme() {
-  return localStorage.getItem('theme') || 'light';
+  const stored = localStorage.getItem('theme');
+  if (stored) return stored;
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
 }
 
 function applyTheme(theme) {
