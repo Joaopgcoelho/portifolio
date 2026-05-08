@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JP Gonçalves — Design Systems & Product Infrastructure</title>
   <link rel="stylesheet" href="../styles.css" />
-  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark')</script>
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'))</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
